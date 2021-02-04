@@ -1,0 +1,37 @@
+{
+  "name": "tuitiontlg",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx tsc && node ./bin/www",
+    "setup": "npx tsc && node ./build/setup/createTable.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.822.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "log4js": "^6.3.0",
+    "memorystore": "^1.6.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.9",
+    "@types/express-session": "^1.17.3",
+    "@types/http-errors": "^1.8.0",
+    "@types/jest": "^26.0.19",
+    "@types/morgan": "^1.9.2",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "morgan": "^1.10.0",
+    "typescript": "^4.1.3"
+  }
+}
