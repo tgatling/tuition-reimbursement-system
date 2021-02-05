@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ApplicationInfoComponent from './applicationinfo.component';
 import { thunkGetApplications } from '../other/thunks';
 
+// Display every application for administrators and allow them to select a specific id
 function ApplicationComponent() {
     const applicationSelector = (state: ApplicationState) => state.applications;
     const applications = useSelector(applicationSelector);

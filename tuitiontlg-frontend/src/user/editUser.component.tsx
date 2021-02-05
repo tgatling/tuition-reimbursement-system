@@ -18,8 +18,8 @@ const connector = connect(userProp, mapDispatch);
 
 type PropsFromRedux = ConnectedProps<typeof connector>;
 
+// User can make changes to account information
 function EditUserComponent(props: PropsFromRedux) {
-    console.log('Edit User', props.user);
 
     const history = useHistory();
 
@@ -33,8 +33,7 @@ function EditUserComponent(props: PropsFromRedux) {
 
     function submitForm() {
         userService.updateUser(props.user).then(() => {
-            console.log('submitForm: ');
-            console.log(props.user);
+
             props.updateUser(new User());
             history.push('/');
         });

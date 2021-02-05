@@ -6,6 +6,8 @@ interface formProp{
     formData: ReimbursementForm;
 }
 
+// Display for confirming grades tab for BenCo
+// Buttons to determine which application have reached grade confirmation stage
 function GradeDisplayComponent(prop: formProp) {
 
 

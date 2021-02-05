@@ -2,6 +2,7 @@ import React from "react";
 
 import "./home";
 
+// Display for Grade Format - Table
 function GradingFormatComponent(){
 
     return(

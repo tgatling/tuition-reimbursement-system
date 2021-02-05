@@ -9,6 +9,7 @@ class ApplicationService {
         this.doc = dynamo;
     }
 
+    // Get application for every candidate - can only be done by administrators.
     async getAllApplications(): Promise <Application[]>{
         log.trace('Get All Application Function');
         const params = {

@@ -1,0 +1,135 @@
+[2021-02-04T17:30:05.916] [ERROR] default - Unable to delete application table.  Error JSON:  {
+  "message": "Requested resource not found: Table: APP_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-02-04T22:30:05.913Z",
+  "requestId": "5VPGC702BQAR9EJ47PELBM51EBVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 26.69473039852105
+}
+[2021-02-04T17:30:05.927] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: USER_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-02-04T22:30:05.927Z",
+  "requestId": "J2PPFP46HKQ6MR1F9P9ITQMK3FVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 4.043220515859092
+}
+[2021-02-04T17:30:05.931] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: FORM_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-02-04T22:30:05.930Z",
+  "requestId": "VLG94G0BCM9TN1SVK74VR350RRVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 45.16145277635689
+}
+[2021-02-04T17:30:05.934] [ERROR] default - Unable to delete message table.  Error JSON:  {
+  "message": "Requested resource not found: Table: MSG_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-02-04T22:30:05.934Z",
+  "requestId": "LUON25QOPMJC6KD2QFBTR6P973VV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 19.89035956496946
+}
+[2021-02-04T17:50:43.366] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: FORM_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-02-04T22:50:43.365Z",
+  "requestId": "H9CUUVEAN6AJC0I0KVSQOHAF6BVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 20.992467332548557
+}
+[2021-02-04T17:50:43.376] [ERROR] default - Unable to delete message table.  Error JSON:  {
+  "message": "Requested resource not found: Table: MSG_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-02-04T22:50:43.376Z",
+  "requestId": "OL0QPOE3NENJVP6DPK226M9RFVVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 21.090410898794907
+}
+[2021-02-04T17:50:43.380] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: USER_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-02-04T22:50:43.380Z",
+  "requestId": "36LF9BBG0O2AFH1R5HFL9O060NVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 3.8069848900039283
+}
+[2021-02-04T17:50:43.383] [ERROR] default - Unable to delete application table.  Error JSON:  {
+  "message": "Requested resource not found: Table: APP_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-02-04T22:50:43.383Z",
+  "requestId": "IBD6EJC85K62341L8DGGMS44MNVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 18.410868355315458
+}
+[2021-02-04T18:11:55.729] [ERROR] default - null
+[2021-02-04T18:13:18.555] [ERROR] default - null
+[2021-02-04T18:13:54.977] [ERROR] default - null
+[2021-02-04T18:15:02.063] [ERROR] default - null
+[2021-02-04T18:16:25.888] [ERROR] default - null
+[2021-02-04T18:18:41.301] [ERROR] default - ValidationException: Invalid UpdateExpression: An expression attribute value used in expression is not defined; attribute value: :awardedR
+    at Request.extractError (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\protocol\json.js:52:27)
+    at Request.callListeners (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:688:14)
+    at Request.transition (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:690:12)
+    at Request.callListeners (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  code: 'ValidationException',
+  time: 2021-02-04T23:18:41.301Z,
+  requestId: 'IHAP37CMSVPU75U68EFAACABI7VV4KQNSO5AEMVJF66Q9ASUAAJG',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 3.8470918584966984
+}
+[2021-02-04T18:19:08.403] [ERROR] default - null
+[2021-02-04T18:29:48.542] [ERROR] default - null
+[2021-02-04T18:57:59.900] [ERROR] default - null
+[2021-02-04T19:00:52.055] [ERROR] default - ValidationException: The provided key element does not match the schema
+    at Request.extractError (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\protocol\json.js:52:27)
+    at Request.callListeners (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:688:14)
+    at Request.transition (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:690:12)
+    at Request.callListeners (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  code: 'ValidationException',
+  time: 2021-02-05T00:00:52.055Z,
+  requestId: '9IL68OHQ7DJEKJ21V6K88N7KI7VV4KQNSO5AEMVJF66Q9ASUAAJG',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 47.786347699039254
+}
+[2021-02-04T19:00:52.086] [ERROR] default - ValidationException: The provided key element does not match the schema
+    at Request.extractError (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\protocol\json.js:52:27)
+    at Request.callListeners (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:688:14)
+    at Request.transition (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:690:12)
+    at Request.callListeners (C:\Users\gatli\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  code: 'ValidationException',
+  time: 2021-02-05T00:00:52.086Z,
+  requestId: 'GON7SBQCIUDME0J15DCRB2UVCVVV4KQNSO5AEMVJF66Q9ASUAAJG',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 40.67064324218268
+}
+[2021-02-04T19:01:22.452] [ERROR] default - null

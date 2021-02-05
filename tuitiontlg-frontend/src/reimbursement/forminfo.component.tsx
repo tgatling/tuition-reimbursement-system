@@ -20,8 +20,8 @@ interface formProp {
     match: any;
 }
 
+// Information displayed from reimbursement form
 function FormInfoComponent(prop: formProp) {
-    console.log('FormInfoComponent');
     const formSelector = (state: ReimbursementFormState) => state.form;
     const userSelector = (state: UserState) => state.user;
     const applicationSelector = (state: ApplicationState) => state.application;
@@ -39,7 +39,6 @@ function FormInfoComponent(prop: formProp) {
 
 
     useEffect(() => {
-        console.log(prop.match.params.id);
         reimbursementFormService
             .getForm(prop.match.params.id)
             .then((returnform) =>
@@ -47,14 +46,11 @@ function FormInfoComponent(prop: formProp) {
             );
     }, [dispatch, prop.match.params.id]);
 
-    console.log('after useEffect form: ', form);
 
     function handleDelete() {
-        console.log('Delete App: ', application);
         applicationService.deleteApplication(application).then(() => {
             dispatch(changeApplication(new Application()));
         });
-        console.log('Delete Form: ', form);
         myService.deleteForm(form).then(() => {
             dispatch(changeReimbursementForm(new ReimbursementForm()));
             history.push('/myapplications');

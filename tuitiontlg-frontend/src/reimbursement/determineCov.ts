@@ -1,13 +1,10 @@
 import React from 'react';
 import {Coverage} from '../system/coverage';
 
-
+// Calculation based on event type and specified percentages for each
 function determineCov(covType: string, cost: number, availR: number){
     let coverage: number = 0;
     let percentage = new Coverage();
-
-    console.log('DetermineCov Type: ', covType);
-    console.log('DetermineCover Cost: ', cost);
 
     if(covType === 'University Course'){
         coverage = percentage.universityCourse;
@@ -23,16 +20,12 @@ function determineCov(covType: string, cost: number, availR: number){
         coverage = percentage.other;
     }
 
-    console.log('Coverage after statement:', coverage);
     cost = cost * coverage;
     
-    console.log('Cost before comparison: ', cost);
-    console.log('Available R: ', availR);
     if(cost > availR){
         cost = availR;
     }
     
-    console.log('Cost after comparison: ', cost);
     return cost;
 }
 

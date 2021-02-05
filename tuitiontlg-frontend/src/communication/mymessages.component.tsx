@@ -8,15 +8,15 @@ import { getMyMessages } from '../redux/actions';
 import MessageInfoComponent from './messageinfo.component';
 import '../home/home.css';
 
+// Retrieves messages of employee that is currently logged in
+// Gives option to compose new message
 function MyMessageComponent() {
-    console.log('MyMsgComponent');
     const messageSelector = (state: MessageState) => state.messages;
     const userSelector = (state: UserState) => state.user;
     const messages = useSelector(messageSelector);
     const user = useSelector(userSelector);
     const dispatch = useDispatch();
 
-    console.log('Message Component User: ', user);
 
     useEffect(() => {
         messageService

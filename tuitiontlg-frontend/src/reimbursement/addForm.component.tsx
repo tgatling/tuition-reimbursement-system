@@ -28,6 +28,7 @@ const connector = connect(formProp, mapDispatch);
 
 type PropsFromRedux = ConnectedProps<typeof connector>;
 
+// Submit a reimbursement form
 function AddFormComponent(props: PropsFromRedux) {
     const [validated, setValidated] = useState(false);
     let userSelector = (state: UserState) => state.user;
@@ -36,7 +37,6 @@ function AddFormComponent(props: PropsFromRedux) {
     let date = new Date();
 
     function handleFormInput(e: SyntheticEvent) {
-        console.log(validated);
         let fm: any = { ...props.reimbursementForm };
         fm[
             (e.target as HTMLInputElement).name
@@ -57,7 +57,6 @@ function AddFormComponent(props: PropsFromRedux) {
 
     function createNewApp() {
         let newApp = new Application();
-        console.log(props.reimbursementForm);
         if (props.reimbursementForm.appId !== undefined) {
             newApp.appId = props.reimbursementForm.appId;
             newApp.employee = props.reimbursementForm.username;
@@ -67,14 +66,10 @@ function AddFormComponent(props: PropsFromRedux) {
             newApp.submitYear = date.getFullYear();
         }
         applicationService.addApplication(newApp).then(() => {
-            console.log('request add form apply comp');
         });
     }
 
     function calculate() {
-        console.log('Calculate');
-        console.log(props.reimbursementForm.cost);
-        console.log(props.reimbursementForm.typeOfEvent);
         let cost = determineCov(
             props.reimbursementForm.typeOfEvent,
             props.reimbursementForm.cost,
@@ -86,8 +81,7 @@ function AddFormComponent(props: PropsFromRedux) {
         }
         userService.updateUser(user);
         props.reimbursementForm.calculation = cost;
-        console.log(cost);
-        console.log(props.reimbursementForm.calculation);
+
     }
 
     const handleSubmit = (event: any) => {
@@ -100,8 +94,6 @@ function AddFormComponent(props: PropsFromRedux) {
         }
         setValidated(true);
     };
-
-    console.log('createform: ', props.reimbursementForm);
 
     return (
         <div>

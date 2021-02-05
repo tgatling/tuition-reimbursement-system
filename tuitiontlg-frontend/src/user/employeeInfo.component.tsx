@@ -6,6 +6,7 @@ import '../home/home.css';
 import EmpRInfoComponent from './empRInfo.component';
 import { Link } from 'react-router-dom';
 
+// Display account information for user currently logged in
 function EmployeeInfoComponent() {
     const userSelector = (state: UserState) => state.user;
     const user = useSelector(userSelector);

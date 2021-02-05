@@ -6,6 +6,7 @@ import { thunkGetForms } from '../other/thunks';
 import {ReimbursementForm} from '../reimbursement/reimbursementForm';
 import GradeDisplayComponent from './gradeDisplay.component';
 
+// Benco tab to display all applications to confirm grades
 function ConfirmGradeComponent() {
     const formSelector = (state: ReimbursementFormState) => state.forms;
     const forms = useSelector(formSelector);

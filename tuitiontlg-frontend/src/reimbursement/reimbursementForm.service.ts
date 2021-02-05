@@ -12,8 +12,7 @@ class ReimbursementFormService{
     }
 
     getForm(id: number): Promise<ReimbursementForm>{
-        console.log('service-getForm', id);
-        console.log('axios', axios.get(this.URI+'/'+id).then(result => result.data))
+
         return axios.get(this.URI+'/'+id).then(result => result.data);
     }
 
@@ -22,7 +21,6 @@ class ReimbursementFormService{
     }
 
     getAllForms(): Promise<ReimbursementForm []> {
-        console.log('Get Request - All Forms');
         return axios.get(this.URI).then(result => result.data);
     }
   

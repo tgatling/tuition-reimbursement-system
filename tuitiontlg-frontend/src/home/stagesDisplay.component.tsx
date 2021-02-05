@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Explaination for stages of the application process
 function StageDisplayComponent(stage: number) {
     return (
         <div className='col stage-card border'>

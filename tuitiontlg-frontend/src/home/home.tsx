@@ -2,6 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import PercentDisplayComponent from './percentDisplay.component';
 
+// HOME PAGE
 function HomeComponent() {
     const history = useHistory();
 

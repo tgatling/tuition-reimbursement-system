@@ -28,10 +28,8 @@ export function registerUser(username: string, password: string) {
         log.debug('User Added:', userAdded)
         if (userAdded) {
             log.info('User has been registered.')
-            //TODO: USER HAS BEEN REGISTERED.  EMPLOYEE LOGIN SCREEN? NEXT?
         } else {
             log.info('User already exists.')
-            //TODO: USER IS ALREADY REGISTERED. MESSAGE?
         }
     });
 }
@@ -62,11 +60,4 @@ export async function checkJobTitle(username: string) {
             return null;
         }
     });
-}
-
-// LOGOUT - Leaves employee page and goes back to homescreen/login
-export function logout() {
-    log.trace('Logout Function');
-    log.info('User has logged out.');
-    //TODO: WHAT TO DO WHEN USER LOGS OUT? HOMEPAGE?
 }

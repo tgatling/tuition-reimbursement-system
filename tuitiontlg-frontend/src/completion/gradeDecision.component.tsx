@@ -25,6 +25,7 @@ const connector = connect(formProp, mapDispatch);
 
 type PropsFromRedux = ConnectedProps<typeof connector>;
 
+// Display for information regarding form and options to confirm grade
 function GradeDecisionComponent(props: PropsFromRedux) {
     let userSelector = (state: UserState) => state.user;
     let user = useSelector(userSelector);

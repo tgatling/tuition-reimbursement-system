@@ -25,6 +25,7 @@ const connector = connect(formProp, mapDispatch);
 
 type PropsFromRedux = ConnectedProps<typeof connector>;
 
+// Make changes to reimbursement form
 function EditFormComponent(props: PropsFromRedux) {
     let userSelector = (state: UserState) => state.user;
     let user = useSelector(userSelector);

@@ -8,7 +8,6 @@ class myService {
     }
 
     deleteForm(form: ReimbursementForm): Promise<null> {
-        console.log('axios delForm: ', form);
         return axios.delete(this.URI+'/'+form.appId, {withCredentials: true}).then(result => null)
     }
 }

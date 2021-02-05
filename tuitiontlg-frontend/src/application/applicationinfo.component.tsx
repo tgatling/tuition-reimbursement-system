@@ -6,6 +6,7 @@ interface appProp {
     appData: Application;
 }
 
+// Specific information about application that will be displayed by Application Component
 function ApplicationInfoComponent(prop: appProp) {
     const history = useHistory();
 

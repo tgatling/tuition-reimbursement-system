@@ -9,6 +9,7 @@ class ReimbursementFormService {
         this.doc = dynamo;
     }
 
+    // Get every reimbursment form submitted
     async getForms(): Promise <ReimbursementForm[]>{
         log.trace('Get Form Function');
         const params = {
@@ -62,6 +63,7 @@ class ReimbursementFormService {
         });
     }
 
+    // Update the information in the reimbursment form
     async updateForm(form: ReimbursementForm): Promise<boolean> {
         log.debug(form);
         const params = {
@@ -135,6 +137,7 @@ class ReimbursementFormService {
         })
     }
 
+    // Delete reimbursement form
     async deleteForm(appId: string): Promise<Boolean> {
         const params = {
             TableName: 'FORM_TABLE',

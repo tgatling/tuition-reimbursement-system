@@ -9,6 +9,7 @@ class MessageService {
         this.doc = dynamo;
     }
 
+    // Get every message in the system
     async getAllMessages(): Promise <Message[]>{
         log.trace('Get All Messages Function');
         const params = {

@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { UserState } from "../redux/reducer";
 import "../home/home.css";
 
+// Table for Reimbursement Eligibility
 function EmpRInfoComponent() {
     const userSelector = (state: UserState) => state.user;
     const user = useSelector(userSelector);

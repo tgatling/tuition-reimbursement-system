@@ -5,7 +5,6 @@ import reimbursementFormService from '../application/reimbursementForm.service'
 const reimbursementRouter = Express.Router();
 
 
-/* GET users listing. */
 reimbursementRouter.get('/', function(req, res, next) {
     reimbursementFormService.getForms().then((form) => {
         res.send(JSON.stringify(form));

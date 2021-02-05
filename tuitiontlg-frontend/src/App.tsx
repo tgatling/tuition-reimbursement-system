@@ -8,13 +8,10 @@ import userService from './user/user.service';
 
 
 function App() {
-  //const [condition, setCondition] = useState(true);
-
   const dispatch = useDispatch();
 
   useEffect(() => {
     userService.getLogin().then((user) => {
-      console.log(user);
       dispatch(getUser(user));
     });
   }, [dispatch]);

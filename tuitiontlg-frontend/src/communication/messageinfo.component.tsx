@@ -5,6 +5,7 @@ interface msgProp{
     msgData: Message;
 }
 
+// Display of specific informatin regarding messages
 function MessageInfoComponent(prop: msgProp) {
 
     return (

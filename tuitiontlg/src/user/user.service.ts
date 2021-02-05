@@ -9,6 +9,7 @@ class UserService {
         this.doc = dynamo;
     }
 
+    // Retrive all user information
     async getUsers(): Promise<User[]> {
         log.trace("Get Users Function");
         const params = {
@@ -62,6 +63,7 @@ class UserService {
         });
     }
 
+    // Update user information when submitted
     async  updateUser(user: User): Promise<boolean>{
         const params = {
             TableName: 'USER_TABLE',

@@ -7,8 +7,8 @@ import { getMyApplications } from '../redux/actions';
 import ApplicationInfoComponent from './applicationinfo.component';
 import '../home/home.css';
 
+// Displays applications for specific employee - currently logged in
 function MyAppsComponent() {
-    console.log('MyAppsComponent');
     const applicationSelector = (state: ApplicationState) => state.applications;
     const userSelector = (state: UserState) => state.user;
     const applications = useSelector(applicationSelector);
@@ -21,7 +21,6 @@ function MyAppsComponent() {
         );
     }, [dispatch, user]);
 
-    console.log('after useEffect apps: ', applications);
 
     
     return (

@@ -16,6 +16,8 @@ const connector = connect(userProp, mapDispatch);
 
 type PropsFromRedux = ConnectedProps<typeof connector>;
 
+// Display for reimbursement availability for specific user
+// Aid in completing form - displayed over application when applying
 function MonetaryComponent(props: PropsFromRedux) {
     
     return (

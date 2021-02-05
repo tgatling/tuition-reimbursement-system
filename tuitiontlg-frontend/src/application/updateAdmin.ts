@@ -1,8 +1,8 @@
 import {User} from '../user/user';
 import {Application} from './application';
 
+// Update application application information after approval to determine who made the decision
 function updateAdmin(user: User, stage: number, app: Application){
-    console.log('UPDATE ADMINISTRATOR!!!')
     // Direct Supervisor Approval
     if(stage === 2){
         if(user.jobTitle === 'Direct Supervisor / Department Head'){
@@ -26,7 +26,6 @@ function updateAdmin(user: User, stage: number, app: Application){
             app.approval.benefitCoordinator = user.username;
         }
     }
-
 
     return app;
 }

@@ -21,8 +21,9 @@ const connector = connect(msgProp, mapDispatch);
 
 type PropsFromRedux = ConnectedProps<typeof connector>;
 
+// Form to send a new message
+// Also used to send more information after making a decision about application
 function NewMessageComponent(props: PropsFromRedux) {
-    console.log('New Message Component');
     const userSelector = (state: UserState) => state.user;
     const user = useSelector(userSelector);
     const history = useHistory();
@@ -44,8 +45,6 @@ function NewMessageComponent(props: PropsFromRedux) {
         });
         history.push('/messages');
     }
-
-    console.log("createform: ", props.Message);
 
     return (
         <div>

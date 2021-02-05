@@ -38,7 +38,6 @@ const initialState: AppState = {
 }
 
 const reducer = (state: AppState = initialState, action: Actions.AppAction): AppState => {
-    console.log(action);
     const newState = {...state};
 
     switch (action.type){

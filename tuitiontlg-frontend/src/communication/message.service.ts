@@ -13,7 +13,6 @@ class MessageService {
     }
 
     getMyMessages(user: User): Promise<Message[]>{
-        console.log('Get Request - Get My Applications');
         return axios.get(this.URI+'/'+user.username).then(result => result.data);
     }
 

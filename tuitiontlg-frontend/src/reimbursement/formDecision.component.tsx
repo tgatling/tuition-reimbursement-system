@@ -27,13 +27,12 @@ const connector = connect(formProp, mapDispatch);
 
 type PropsFromRedux = ConnectedProps<typeof connector>;
 
+// Administrators submit decisions based on stage of application
 function FormDecisionComponent(props: PropsFromRedux) {
-    console.log('Edit Form', props.reimbursementForm);
     const userSelector = (state: UserState) => state.user;
     const user = useSelector(userSelector);
     let passerApp = new Application();
     
-    console.log('Form Decision', user)
 
     const history = useHistory();
 
@@ -56,15 +55,12 @@ function FormDecisionComponent(props: PropsFromRedux) {
     }
 
     function acceptForm(){
-        console.log('Accept Form');
         props.reimbursementForm.processId = (user.processId + 1);
         passerApp.appId = props.reimbursementForm.appId;
         passerApp.employee = props.reimbursementForm.username;
         applicationService.getApplication(passerApp).then((application)=>{
-            console.log('GET APPLICATION: ', application);
             application.processId= props.reimbursementForm.processId;
             let app = updateAdmin(user, props.reimbursementForm.processId, application);
-            console.log('UPDATED APP: ', app);
             applicationService.updateApplication(app).then(()=>{});
         });
         submitForm('Accepted');

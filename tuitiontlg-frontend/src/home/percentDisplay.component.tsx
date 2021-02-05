@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Percentages for reimbursement - List
 function PercentDisplayComponent() {
     
     return (
