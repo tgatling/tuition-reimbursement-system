@@ -10,9 +10,35 @@ is approved in all stages, the employee must submit evidence of completion with 
 passing grade or presentation. After this, the reimbursement is granted or denied.
 
 
-## Stack
+## Technologies Used
 * DynamoDB
 * Express.js
 * React
 * TypeScript
+
+## Features
+Current Features:
+* Application submissions for reimbursement
+* Management of application process
+* Communication through message system
+
+Future Development:
+* Viewing submissions of supporting documentation and presentations
+* Notifications for updates in application process
+
+## Getting Started
+Cloning the respository:
+https://github.com/tgatling/tuition-reimbursement-system.git
+
+Back-end Commands:
+* cd projectOne/tuition-reimbursement-system/tuitiontlg
+* npm install
+* aws configure <-- configure AWS CLI
+* npm run setup <-- create tables in DynamoDB
+* npm run start <-- run program
+
+Front-end Commands:
+* cd projectOne/tuition-reimbursement-system/tuitiontlg-frontend
+* npm install
+* npm run start
 
