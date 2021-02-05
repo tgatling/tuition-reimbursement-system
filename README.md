@@ -12,9 +12,9 @@ passing grade or presentation. After this, the reimbursement is granted or denie
 
 ## Technologies Used
 * DynamoDB
-* Express.js
-* React
-* TypeScript
+* Express.js - version 4.16.1
+* React - version 17.0.1
+* TypeScript - version 4.1.3
 
 ## Features
 Current Features:
