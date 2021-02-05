@@ -14,6 +14,5 @@ is then granted or denied.
 * Express.js
 * React
 * TypeScript
-* Jest
-* Enzyme
+
 
