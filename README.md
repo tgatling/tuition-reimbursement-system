@@ -27,7 +27,7 @@ Future Development:
 * Notifications for updates in application process
 
 ## Getting Started
-Cloning the respository:
+Cloning the repository:
 https://github.com/tgatling/tuition-reimbursement-system.git
 
 Back-end Commands:
