@@ -58,10 +58,17 @@ function FormDecisionComponent(props: PropsFromRedux) {
         props.reimbursementForm.processId = (user.processId + 1);
         passerApp.appId = props.reimbursementForm.appId;
         passerApp.employee = props.reimbursementForm.username;
+        console.log('Passer App: ', passerApp);
         applicationService.getApplication(passerApp).then((application)=>{
+            console.log('Inside getApplication: ', application);
             application.processId= props.reimbursementForm.processId;
             let app = updateAdmin(user, props.reimbursementForm.processId, application);
-            applicationService.updateApplication(app).then(()=>{});
+            applicationService.updateApplication(app).then(()=>{}).catch((error)=>{
+                alert('Application did not update.');
+                console.log(error);
+            });
+        }).catch((error)=>{
+            console.log(error);
         });
         submitForm('Accepted');
     }

@@ -5,7 +5,7 @@ import applicationService from '../application/application.service';
 const applicationRouter = Express.Router();
 
 applicationRouter.get('/', function(req, res, next) {
-    log.trace('GET (/)');
+    log.trace('app GET /');
     applicationService.getAllApplications().then((applications) => {
         log.debug(applications);
         res.send(JSON.stringify(applications));
@@ -13,16 +13,16 @@ applicationRouter.get('/', function(req, res, next) {
 });
 
 applicationRouter.get('/:id', function(req, res, next) {
-    log.trace('GET (/:id)');
-    applicationService.getApplicationById(req.params.id, req.params.employee).then((application)=>{
+    log.trace('app GET /:id');
+    applicationService.getApplicationById(req.params.id).then((application)=>{
         res.send(JSON.stringify(application));
     });
 })
 
 applicationRouter.delete('/:id', function (req, res, next) {
-    log.trace('DELETE (/:id)');
-    log.debug(req.body);
-    applicationService.removeApplication(req.body).then((data)=> {
+    log.trace('app DELETE /:id');
+    log.debug(req.params.id);
+    applicationService.removeApplication(Number(req.params.id)).then((data)=> {
         log.debug(data);
         res.sendStatus(200);
     }).catch((err) => {
@@ -32,7 +32,7 @@ applicationRouter.delete('/:id', function (req, res, next) {
 });
 
 applicationRouter.post('/', (req, res, next) => {
-    log.trace('POST (/)');
+    log.trace('app POST /');
     log.debug(req.body);
     applicationService.addApplication(req.body).then((data)=> {
         log.debug(data);
@@ -44,7 +44,7 @@ applicationRouter.post('/', (req, res, next) => {
 });
 
 applicationRouter.put('/', (req, res, next) => {
-    log.trace('PUT (/)');
+    log.trace('app PUT /');
     log.debug(req.body);
     applicationService.updateApplication(req.body).then((data)=> {
         res.send(data);

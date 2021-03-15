@@ -101,10 +101,6 @@ var appTableSchema = {
             AttributeName: 'appId',
             KeyType: 'HASH'
         },
-        {
-            AttributeName: 'employee',
-            KeyType: 'RANGE'
-        }
     ],
     ProvisionedThroughput: {
         ReadCapacityUnits: 3,

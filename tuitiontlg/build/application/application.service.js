@@ -95,18 +95,18 @@ var ApplicationService = /** @class */ (function () {
         });
     };
     // Get a particular application by the id.
-    ApplicationService.prototype.getApplicationById = function (id, employee) {
+    ApplicationService.prototype.getApplicationById = function (id) {
         return __awaiter(this, void 0, void 0, function () {
             var params;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         log_1.default.trace('Get Application by Id');
+                        log_1.default.debug("id: " + id);
                         params = {
                             TableName: 'APP_TABLE',
                             Key: {
                                 'appId': id,
-                                'employee': employee
                             }
                         };
                         return [4 /*yield*/, this.doc.get(params).promise().then(function (data) {
@@ -115,6 +115,7 @@ var ApplicationService = /** @class */ (function () {
                                     return data.Item;
                                 }
                                 else {
+                                    log_1.default.debug('returning null for get application by id');
                                     return null;
                                 }
                             })];
@@ -155,7 +156,7 @@ var ApplicationService = /** @class */ (function () {
         });
     };
     // Delete an application from the system.
-    ApplicationService.prototype.removeApplication = function (application) {
+    ApplicationService.prototype.removeApplication = function (id) {
         return __awaiter(this, void 0, void 0, function () {
             var params;
             return __generator(this, function (_a) {
@@ -165,8 +166,7 @@ var ApplicationService = /** @class */ (function () {
                         params = {
                             TableName: 'APP_TABLE',
                             Key: {
-                                'appId': application.appId,
-                                'employee': application.employee
+                                'appId': id,
                             }
                         };
                         return [4 /*yield*/, this.doc.delete(params).promise().then(function (result) {
@@ -194,18 +194,26 @@ var ApplicationService = /** @class */ (function () {
                             Key: {
                                 'appId': application.appId
                             },
-                            UpdateExpression: 'set amountGranted = :amountGranted, status = :status, approval = :approval, processId =  :processId',
+                            UpdateExpression: "set employee=:emp, submitMonth=:sm, submitDate=:sd, \n        submitYear=:sy, status=:stat, processId=:pid, approval=:a, amountGranted=:ag",
                             ExpressionAttributeValues: {
-                                ':amount': application.amountGranted,
-                                ':status': application.status,
-                                ':approval': application.approval,
-                                ':processId': application.processId,
+                                ':emp': application.employee,
+                                ':sm': application.submitMonth,
+                                ':sd': application.submitDate,
+                                ':sy': application.submitYear,
+                                ':stat': application.status,
+                                ':pid': application.processId,
+                                ':a': application.approval,
+                                ':ag': application.amountGranted
                             },
                             ExpressionAttributeNames: {
-                                '#amount': 'amount',
+                                '#employee': 'employee',
+                                '#submitMonth': 'submitMonth',
+                                '#submitDate': 'submitDate',
+                                '#submitYear': 'submitYear',
                                 '#status': 'status',
+                                '#processId': 'processId',
                                 '#approval': 'approval',
-                                '#processId': 'processId'
+                                '#amountGranted': 'amountGranted'
                             },
                             ReturnValues: 'UPDATE_NEW'
                         };
@@ -213,6 +221,7 @@ var ApplicationService = /** @class */ (function () {
                                 log_1.default.debug(data);
                                 return true;
                             }).catch(function (err) {
+                                log_1.default.trace('Error for update');
                                 log_1.default.error(err);
                                 return false;
                             })];

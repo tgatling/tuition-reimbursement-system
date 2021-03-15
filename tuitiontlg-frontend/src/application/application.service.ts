@@ -12,24 +12,26 @@ class ApplicationService {
         return axios.get(this.URI).then(result => result.data);
     } 
 
-    getApplication(a: Application): Promise<Application> {
-        return axios.get(this.URI+'/'+a).then(result=>result.data);
+    getApplication(app: Application): Promise<Application> {
+        console.log('getApplication');
+        return axios.get(this.URI+'/'+app.appId).then(result=>result.data);
     }
 
-    getMyApplications(u: User): Promise<Application[]>{
+    getMyApplications(user: User): Promise<Application[]>{
         return axios.get(this.URI+'/').then(result => result.data);
     }
 
-    addApplication(a: Application): Promise<null> {
-        return axios.post(this.URI, a).then(result => null);
+    addApplication(app: Application): Promise<null> {
+        return axios.post(this.URI, app).then(result => null);
     }
 
-    updateApplication(a: Application): Promise<null> {
-        return axios.put(this.URI, a.appId).then(result => null);
+    updateApplication(app: Application): Promise<boolean> {
+        return axios.put(this.URI, app).then(result => result.data);
     }
 
-    deleteApplication(a: Application): Promise<null> {
-        return axios.delete(this.URI+'/'+a.appId, {withCredentials: true}).then(result => null)
+    deleteApplication(id: number): Promise<null> {
+        console.log('Delete app: ', id);
+        return axios.delete(this.URI+'/'+id, {withCredentials: true}).then(result => null)
     }
 }
 

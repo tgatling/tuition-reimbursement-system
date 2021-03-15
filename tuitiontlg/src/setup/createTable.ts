@@ -84,10 +84,10 @@ const appTableSchema = {
             AttributeName: 'appId',
             KeyType: 'HASH'
         },
-        {
-            AttributeName: 'employee',
-            KeyType: 'RANGE'
-        }
+        // {
+        //     AttributeName: 'employee',
+        //     KeyType: 'RANGE'
+        // }
     ],
     ProvisionedThroughput: {
         ReadCapacityUnits: 3,

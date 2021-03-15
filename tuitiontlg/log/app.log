@@ -2757,3 +2757,5448 @@
 [2021-02-04T19:01:14.376] [DEBUG] default - data.Item:  {"processId":2,"lastName":"Boone","timeOfDay":"AM","gradingFormat":"None","firstName":"Desmond","finalAttachment":"","calculation":114.75,"reimbursed":false,"startDate":"17","missedWork":"","startMonth":"05","timeMins":"00","location":"Online","typeOfEvent":"Certification Preparation Class","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","eventAttachment":"","cost":"153","workJustification":"Preparation","username":"Dezi","appId":751,"description":"Description","timeHour":"09","startYear":"2021"}
 [2021-02-04T19:01:22.450] [TRACE] default - users GET /
 [2021-02-04T19:01:22.452] [ERROR] default - null
+[2021-03-15T15:09:57.154] [ERROR] default - Unable to delete message table.  Error JSON:  {
+  "message": "Requested resource not found: Table: MSG_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-03-15T19:09:57.152Z",
+  "requestId": "H1VILF4BGUAN87VA8VCCJ41QA7VV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 0.6105488304716467
+}
+[2021-03-15T15:09:57.165] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: USER_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-03-15T19:09:57.164Z",
+  "requestId": "D6K8JS908DDLUN8FMAOE92KL5VVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 34.10084943687679
+}
+[2021-03-15T15:09:57.175] [ERROR] default - Unable to delete application table.  Error JSON:  {
+  "message": "Requested resource not found: Table: APP_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-03-15T19:09:57.175Z",
+  "requestId": "DQ4IOAFE4MQAERUPFP6MACRRIFVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 46.743483909369864
+}
+[2021-03-15T15:09:57.179] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: FORM_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-03-15T19:09:57.179Z",
+  "requestId": "28DI2ECC4G213URITEOF2VFC2NVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 0.6541148426807308
+}
+[2021-03-15T15:10:02.318] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'USER_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T19:09:59.188Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE',
+    TableId: '030be394-1ce5-41d3-8622-704b50ddec7f'
+  }
+}
+[2021-03-15T15:10:02.409] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'FORM_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T19:09:59.283Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE',
+    TableId: 'dd7054d3-995e-47c5-937b-50cda8fdfcfd'
+  }
+}
+[2021-03-15T15:10:02.427] [TRACE] default - Application Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'APP_TABLE',
+    KeySchema: [ [Object], [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T19:09:59.299Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/APP_TABLE',
+    TableId: '045d5014-4f92-4658-8732-cdfae69781db',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-03-15T15:10:02.486] [TRACE] default - Message Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'MSG_TABLE',
+    KeySchema: [ [Object], [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T19:09:59.315Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE',
+    TableId: '696ee3b7-97b4-4195-bbd2-a2c402823784',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-03-15T15:10:12.333] [TRACE] default - Add User Function
+[2021-03-15T15:10:12.346] [TRACE] default - Add User Function
+[2021-03-15T15:10:12.350] [TRACE] default - Add User Function
+[2021-03-15T15:10:12.366] [TRACE] default - Add User Function
+[2021-03-15T15:10:12.372] [TRACE] default - Add User Function
+[2021-03-15T15:10:12.376] [TRACE] default - Add User Function
+[2021-03-15T15:10:12.449] [INFO] default - Successfully added user
+[2021-03-15T15:10:12.451] [INFO] default - Successfully added user
+[2021-03-15T15:10:12.452] [INFO] default - Successfully added user
+[2021-03-15T15:10:12.453] [INFO] default - Successfully added user
+[2021-03-15T15:10:12.455] [INFO] default - Successfully added user
+[2021-03-15T15:10:12.456] [INFO] default - Successfully added user
+[2021-03-15T15:10:12.494] [INFO] default - Successfully added reimbursement form
+[2021-03-15T15:10:12.499] [INFO] default - Successfully added reimbursement form
+[2021-03-15T15:10:12.509] [INFO] default - Successfully added reimbursement form
+[2021-03-15T15:10:22.520] [INFO] default - Successfully added application
+[2021-03-15T15:10:22.523] [INFO] default - Successfully added application
+[2021-03-15T15:10:22.525] [INFO] default - Successfully added application
+[2021-03-15T15:10:27.581] [INFO] default - Successfully added message
+[2021-03-15T15:10:27.584] [INFO] default - Successfully added message
+[2021-03-15T15:10:27.589] [INFO] default - Successfully added message
+[2021-03-15T15:10:27.592] [INFO] default - Successfully added message
+[2021-03-15T15:10:27.594] [INFO] default - Successfully added message
+[2021-03-15T15:11:54.607] [DEBUG] default - users GET /:  undefined
+[2021-03-15T15:11:54.611] [DEBUG] default - User:  {}
+[2021-03-15T15:12:13.834] [DEBUG] default - users GET /:  undefined
+[2021-03-15T15:12:13.835] [DEBUG] default - User:  {}
+[2021-03-15T15:12:42.550] [DEBUG] default - users POST /:  {
+  username: 'Tequesha',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T15:12:42.553] [TRACE] default - Login Function
+[2021-03-15T15:12:42.554] [DEBUG] default - Username: Tequesha, Password: Enter
+[2021-03-15T15:12:42.555] [TRACE] default - Get User By Name Function
+[2021-03-15T15:12:42.706] [DEBUG] default - data.Item:  {"access":"granted","processId":2,"password":"Enter","username":"Tequesha","admin":true,"jobTitle":"Direct Supervisor"}
+[2021-03-15T15:12:42.707] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:12:47.460] [TRACE] default - GET (/)
+[2021-03-15T15:12:47.461] [TRACE] default - Get All Application Function
+[2021-03-15T15:12:47.467] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:12:47.469] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:12:47.579] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:13:47.173] [TRACE] default - rf get /:id 32
+[2021-03-15T15:13:47.174] [TRACE] default - Get Form By Id Function
+[2021-03-15T15:13:47.272] [DEBUG] default - data.Item:  {"processId":2,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Jayland","finalAttachment":"","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":150,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T15:14:41.176] [TRACE] default - users GET /
+[2021-03-15T15:14:41.179] [ERROR] default - null
+[2021-03-15T15:14:44.060] [DEBUG] default - users GET /:  undefined
+[2021-03-15T15:14:44.061] [DEBUG] default - User:  {}
+[2021-03-15T15:14:51.531] [DEBUG] default - users POST /:  {
+  username: 'Dezi',
+  password: 'pass',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T15:14:51.533] [TRACE] default - Login Function
+[2021-03-15T15:14:51.534] [DEBUG] default - Username: Dezi, Password: pass
+[2021-03-15T15:14:51.535] [TRACE] default - Get User By Name Function
+[2021-03-15T15:14:51.622] [DEBUG] default - data.Item:  {"awardedR":0,"processId":1,"password":"Pass2","admin":false,"totalR":1000,"access":"granted","pendingR":150,"username":"Dezi","jobTitle":"Employee","availableR":850}
+[2021-03-15T15:14:55.869] [DEBUG] default - users POST /:  {
+  username: 'Dezi',
+  password: 'pass2',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T15:14:55.871] [TRACE] default - Login Function
+[2021-03-15T15:14:55.872] [DEBUG] default - Username: Dezi, Password: pass2
+[2021-03-15T15:14:55.873] [TRACE] default - Get User By Name Function
+[2021-03-15T15:14:55.931] [DEBUG] default - data.Item:  {"awardedR":0,"processId":1,"password":"Pass2","admin":false,"totalR":1000,"access":"granted","pendingR":150,"username":"Dezi","jobTitle":"Employee","availableR":850}
+[2021-03-15T15:15:03.058] [DEBUG] default - users POST /:  {
+  username: 'Dezi',
+  password: 'Pass2',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T15:15:03.060] [TRACE] default - Login Function
+[2021-03-15T15:15:03.061] [DEBUG] default - Username: Dezi, Password: Pass2
+[2021-03-15T15:15:03.061] [TRACE] default - Get User By Name Function
+[2021-03-15T15:15:03.136] [DEBUG] default - data.Item:  {"awardedR":0,"processId":1,"password":"Pass2","admin":false,"totalR":1000,"access":"granted","pendingR":150,"username":"Dezi","jobTitle":"Employee","availableR":850}
+[2021-03-15T15:15:03.137] [INFO] default - loggedUser:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T15:15:07.036] [DEBUG] default - users GET /:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T15:15:07.038] [DEBUG] default - User:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T15:15:09.150] [DEBUG] default - users GET /:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T15:15:09.152] [DEBUG] default - User:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T15:15:09.200] [TRACE] default - ind GET /
+[2021-03-15T15:15:09.201] [TRACE] default - Get the application based off of the employee that submitted it.
+[2021-03-15T15:15:19.967] [TRACE] default - users GET /
+[2021-03-15T15:15:19.969] [ERROR] default - null
+[2021-03-15T15:15:21.801] [DEBUG] default - users GET /:  undefined
+[2021-03-15T15:15:21.802] [DEBUG] default - User:  {}
+[2021-03-15T15:15:27.693] [DEBUG] default - users POST /:  {
+  username: 'Tequesha',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T15:15:27.695] [TRACE] default - Login Function
+[2021-03-15T15:15:27.695] [DEBUG] default - Username: Tequesha, Password: Enter
+[2021-03-15T15:15:27.696] [TRACE] default - Get User By Name Function
+[2021-03-15T15:15:27.795] [DEBUG] default - data.Item:  {"access":"granted","processId":2,"password":"Enter","username":"Tequesha","admin":true,"jobTitle":"Direct Supervisor"}
+[2021-03-15T15:15:27.797] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:15:31.014] [TRACE] default - GET (/)
+[2021-03-15T15:15:31.015] [TRACE] default - Get All Application Function
+[2021-03-15T15:15:31.020] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:15:31.021] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:15:31.080] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:15:34.550] [TRACE] default - rf get /:id 32
+[2021-03-15T15:15:34.551] [TRACE] default - Get Form By Id Function
+[2021-03-15T15:15:34.646] [DEBUG] default - data.Item:  {"processId":2,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Jayland","finalAttachment":"","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":150,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T15:28:05.433] [TRACE] default - GET (/:id)
+[2021-03-15T15:28:05.434] [TRACE] default - Get Application by Id
+[2021-03-15T15:28:05.453] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  cost: 150,
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T15:28:05.458] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  cost: 150,
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T15:28:05.602] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T15:28:15.670] [TRACE] default - GET (/)
+[2021-03-15T15:28:15.670] [TRACE] default - Get All Application Function
+[2021-03-15T15:28:15.673] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:28:15.675] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:28:15.757] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:28:22.169] [TRACE] default - rf get /:id 32
+[2021-03-15T15:28:22.170] [TRACE] default - Get Form By Id Function
+[2021-03-15T15:28:22.270] [DEBUG] default - data.Item:  {"processId":3,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T15:28:26.233] [TRACE] default - GET (/)
+[2021-03-15T15:28:26.233] [TRACE] default - Get All Application Function
+[2021-03-15T15:28:26.297] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:42:00.470] [TRACE] default - Deleted application table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "APP_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/APP_TABLE",
+    "TableId": "045d5014-4f92-4658-8732-cdfae69781db"
+  }
+}
+[2021-03-15T15:42:00.597] [TRACE] default - Deleted user table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "FORM_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE",
+    "TableId": "dd7054d3-995e-47c5-937b-50cda8fdfcfd"
+  }
+}
+[2021-03-15T15:42:00.604] [TRACE] default - Deleted message table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "MSG_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE",
+    "TableId": "696ee3b7-97b4-4195-bbd2-a2c402823784"
+  }
+}
+[2021-03-15T15:42:00.736] [TRACE] default - Deleted user table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "USER_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE",
+    "TableId": "030be394-1ce5-41d3-8622-704b50ddec7f"
+  }
+}
+[2021-03-15T15:42:05.664] [TRACE] default - Application Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'APP_TABLE',
+    KeySchema: [ [Object], [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T19:42:02.518Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/APP_TABLE',
+    TableId: '6e4982e6-e0c2-445a-8b59-bb41faf3dbd6',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-03-15T15:42:05.700] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'FORM_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T19:42:02.588Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE',
+    TableId: '0761d31d-595b-47ba-bfa8-de4de5112f70'
+  }
+}
+[2021-03-15T15:42:05.830] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'USER_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T19:42:02.718Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE',
+    TableId: '9548ea50-47c5-4f5a-98eb-2045cd3f6a49'
+  }
+}
+[2021-03-15T15:42:15.815] [INFO] default - Successfully added reimbursement form
+[2021-03-15T15:42:15.817] [INFO] default - Successfully added reimbursement form
+[2021-03-15T15:42:15.822] [INFO] default - Successfully added reimbursement form
+[2021-03-15T15:42:15.840] [TRACE] default - Add User Function
+[2021-03-15T15:42:15.842] [TRACE] default - Add User Function
+[2021-03-15T15:42:15.844] [TRACE] default - Add User Function
+[2021-03-15T15:42:15.847] [TRACE] default - Add User Function
+[2021-03-15T15:42:15.848] [TRACE] default - Add User Function
+[2021-03-15T15:42:15.850] [TRACE] default - Add User Function
+[2021-03-15T15:42:15.911] [INFO] default - Successfully added user
+[2021-03-15T15:42:15.914] [INFO] default - Successfully added user
+[2021-03-15T15:42:15.916] [INFO] default - Successfully added user
+[2021-03-15T15:42:15.918] [INFO] default - Successfully added user
+[2021-03-15T15:42:15.920] [INFO] default - Successfully added user
+[2021-03-15T15:42:15.935] [INFO] default - Successfully added user
+[2021-03-15T15:42:25.785] [INFO] default - Successfully added application
+[2021-03-15T15:42:25.789] [INFO] default - Successfully added application
+[2021-03-15T15:42:25.792] [INFO] default - Successfully added application
+[2021-03-15T15:42:27.410] [TRACE] default - Message Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'MSG_TABLE',
+    KeySchema: [ [Object], [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T19:42:24.276Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE',
+    TableId: '6e1a47fc-d5ba-47d8-a7af-5b35ec646f0d',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-03-15T15:42:52.544] [INFO] default - Successfully added message
+[2021-03-15T15:42:52.547] [INFO] default - Successfully added message
+[2021-03-15T15:42:52.553] [INFO] default - Successfully added message
+[2021-03-15T15:42:52.555] [INFO] default - Successfully added message
+[2021-03-15T15:42:52.559] [INFO] default - Successfully added message
+[2021-03-15T15:46:02.987] [TRACE] default - users GET /
+[2021-03-15T15:46:02.992] [ERROR] default - null
+[2021-03-15T15:46:08.808] [DEBUG] default - users GET /:  undefined
+[2021-03-15T15:46:08.809] [DEBUG] default - User:  {}
+[2021-03-15T15:46:16.362] [DEBUG] default - users POST /:  {
+  username: 'Tequesha',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T15:46:16.366] [TRACE] default - Login Function
+[2021-03-15T15:46:16.367] [DEBUG] default - Username: Tequesha, Password: Enter
+[2021-03-15T15:46:16.368] [TRACE] default - Get User By Name Function
+[2021-03-15T15:46:16.510] [DEBUG] default - data.Item:  {"access":"granted","processId":2,"password":"Enter","username":"Tequesha","admin":true,"jobTitle":"Direct Supervisor"}
+[2021-03-15T15:46:16.511] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:46:21.790] [TRACE] default - GET (/)
+[2021-03-15T15:46:21.791] [TRACE] default - Get All Application Function
+[2021-03-15T15:46:21.798] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:46:21.800] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:46:21.890] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:46:23.512] [TRACE] default - rf get /:id 32
+[2021-03-15T15:46:23.513] [TRACE] default - Get Form By Id Function
+[2021-03-15T15:46:23.569] [DEBUG] default - data.Item:  {"processId":2,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Jayland","finalAttachment":"","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":150,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T15:46:35.424] [TRACE] default - GET (/:id)
+[2021-03-15T15:46:35.425] [TRACE] default - Get Application by Id
+[2021-03-15T15:46:35.441] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  cost: 150,
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T15:46:35.445] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  cost: 150,
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T15:46:35.523] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T15:48:15.751] [TRACE] default - msg GET /:username
+[2021-03-15T15:48:15.752] [TRACE] default - Tequesha
+[2021-03-15T15:48:15.753] [TRACE] default - Get the message sent by specific employee.
+[2021-03-15T15:48:15.759] [TRACE] default - msg POST /
+[2021-03-15T15:48:15.759] [DEBUG] default - {
+  sender: 'Tequesha',
+  recipient: 'Jay',
+  body: 'testing update application.',
+  msgDate: 'Mon Mar 15 2021 15:46:21 GMT-0400 (Eastern Daylight Time)'
+}
+[2021-03-15T15:48:15.849] [INFO] default - Successfully added message
+[2021-03-15T15:48:15.850] [DEBUG] default - true
+[2021-03-15T15:48:19.716] [TRACE] default - GET (/)
+[2021-03-15T15:48:19.717] [TRACE] default - Get All Application Function
+[2021-03-15T15:48:19.722] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:48:19.723] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T15:48:19.780] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:48:21.973] [TRACE] default - rf get /:id 32
+[2021-03-15T15:48:21.974] [TRACE] default - Get Form By Id Function
+[2021-03-15T15:48:22.125] [DEBUG] default - data.Item:  {"processId":3,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T15:48:25.146] [TRACE] default - GET (/)
+[2021-03-15T15:48:25.147] [TRACE] default - Get All Application Function
+[2021-03-15T15:48:25.204] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:48:28.736] [TRACE] default - users GET /
+[2021-03-15T15:48:28.737] [ERROR] default - null
+[2021-03-15T15:48:30.987] [DEBUG] default - users GET /:  undefined
+[2021-03-15T15:48:30.988] [DEBUG] default - User:  {}
+[2021-03-15T15:48:37.156] [DEBUG] default - users POST /:  {
+  username: 'Kaleb',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T15:48:37.158] [TRACE] default - Login Function
+[2021-03-15T15:48:37.158] [DEBUG] default - Username: Kaleb, Password: Enter
+[2021-03-15T15:48:37.159] [TRACE] default - Get User By Name Function
+[2021-03-15T15:48:37.251] [DEBUG] default - data.Item:  {"access":"granted","processId":3,"password":"Enter","username":"Kaleb","admin":true,"jobTitle":"Direct Supervisor / Department Head"}
+[2021-03-15T15:48:37.252] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T15:48:42.311] [TRACE] default - GET (/)
+[2021-03-15T15:48:42.311] [TRACE] default - Get All Application Function
+[2021-03-15T15:48:42.314] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T15:48:42.315] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T15:48:42.407] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:48:44.782] [TRACE] default - rf get /:id 32
+[2021-03-15T15:48:44.783] [TRACE] default - Get Form By Id Function
+[2021-03-15T15:48:44.852] [DEBUG] default - data.Item:  {"processId":3,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T15:48:51.677] [TRACE] default - GET (/:id)
+[2021-03-15T15:48:51.677] [TRACE] default - Get Application by Id
+[2021-03-15T15:48:51.694] [DEBUG] default - {
+  processId: 4,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: 150,
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T15:48:51.699] [DEBUG] default - {
+  processId: 4,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: 150,
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T15:48:51.771] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T15:50:27.081] [TRACE] default - msg POST /
+[2021-03-15T15:50:27.081] [DEBUG] default - {
+  sender: 'Kaleb',
+  recipient: 'Jay',
+  body: 'Testing with the correct return.',
+  msgDate: 'Mon Mar 15 2021 15:48:42 GMT-0400 (Eastern Daylight Time)'
+}
+[2021-03-15T15:50:27.086] [TRACE] default - msg GET /:username
+[2021-03-15T15:50:27.086] [TRACE] default - Kaleb
+[2021-03-15T15:50:27.086] [TRACE] default - Get the message sent by specific employee.
+[2021-03-15T15:50:27.177] [INFO] default - Successfully added message
+[2021-03-15T15:50:27.178] [DEBUG] default - true
+[2021-03-15T15:50:30.521] [TRACE] default - GET (/)
+[2021-03-15T15:50:30.522] [TRACE] default - Get All Application Function
+[2021-03-15T15:50:30.524] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T15:50:30.526] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T15:50:30.580] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:52:32.185] [TRACE] default - users GET /
+[2021-03-15T15:52:32.191] [ERROR] default - null
+[2021-03-15T15:52:34.578] [DEBUG] default - users GET /:  undefined
+[2021-03-15T15:52:34.579] [DEBUG] default - User:  {}
+[2021-03-15T15:52:42.089] [DEBUG] default - users POST /:  {
+  username: 'Millard',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T15:52:42.092] [TRACE] default - Login Function
+[2021-03-15T15:52:42.093] [DEBUG] default - Username: Millard, Password: Enter
+[2021-03-15T15:52:42.094] [TRACE] default - Get User By Name Function
+[2021-03-15T15:52:42.210] [DEBUG] default - data.Item:  {"access":"granted","processId":4,"password":"Enter","username":"Millard","admin":true,"jobTitle":"Benefits Coordinator"}
+[2021-03-15T15:52:42.211] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T15:52:46.300] [TRACE] default - GET (/)
+[2021-03-15T15:52:46.301] [TRACE] default - Get All Application Function
+[2021-03-15T15:52:46.307] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T15:52:46.308] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T15:52:46.400] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T15:52:48.677] [TRACE] default - rf get /:id 32
+[2021-03-15T15:52:48.678] [TRACE] default - Get Form By Id Function
+[2021-03-15T15:52:48.785] [DEBUG] default - data.Item:  {"processId":4,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T15:53:06.290] [TRACE] default - GET (/:id)
+[2021-03-15T15:53:06.291] [TRACE] default - Get Application by Id
+[2021-03-15T15:53:06.305] [DEBUG] default - {
+  processId: 5,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: 150,
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T15:53:06.309] [DEBUG] default - {
+  processId: 5,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: 150,
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T15:53:06.392] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:02:26.445] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:02:26.448] [DEBUG] default - User:  {}
+[2021-03-15T16:02:30.275] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:02:30.275] [DEBUG] default - User:  {}
+[2021-03-15T16:02:31.115] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:02:31.116] [DEBUG] default - User:  {}
+[2021-03-15T16:02:42.825] [DEBUG] default - users POST /:  {
+  username: 'Millard',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:02:42.828] [TRACE] default - Login Function
+[2021-03-15T16:02:42.828] [DEBUG] default - Username: Millard, Password: Enter
+[2021-03-15T16:02:42.829] [TRACE] default - Get User By Name Function
+[2021-03-15T16:02:42.939] [DEBUG] default - data.Item:  {"access":"granted","processId":4,"password":"Enter","username":"Millard","admin":true,"jobTitle":"Benefits Coordinator"}
+[2021-03-15T16:02:42.940] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:02:49.359] [TRACE] default - app GET /
+[2021-03-15T16:02:49.360] [TRACE] default - Get All Application Function
+[2021-03-15T16:02:49.365] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:02:49.367] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:02:49.654] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:02:51.423] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:02:51.424] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:02:51.482] [DEBUG] default - data.Item:  {"processId":5,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:02:55.363] [TRACE] default - app GET /
+[2021-03-15T16:02:55.364] [TRACE] default - Get All Application Function
+[2021-03-15T16:02:55.368] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:02:55.369] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:02:55.558] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:02:57.000] [TRACE] default - rf GET /:id 25
+[2021-03-15T16:02:57.001] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:02:57.176] [DEBUG] default - data.Item:  {"processId":6,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Desmond","finalAttachment":"C:\fakepathGrade from Prep Class.pdf","calculation":225,"reimbursed":true,"startDate":29,"missedWork":"None","startMonth":3,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification Preparation Class","gradeDecision":"Passing","approvalAttachment":"C:\fakepathDirect Supervisor Approval.msg","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":300,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career. The preparation class will increase my chances of passing.","username":"Dezi","appId":25,"description":"Preparation course for the AWS Certified Developer examination that was already approved.  Offers me a better chance of passing.","timeHour":"08","startYear":2020}
+[2021-03-15T16:02:59.562] [TRACE] default - app GET /
+[2021-03-15T16:02:59.563] [TRACE] default - Get All Application Function
+[2021-03-15T16:02:59.627] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:03:01.800] [TRACE] default - rf GET /:id 20
+[2021-03-15T16:03:01.801] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:03:01.909] [DEBUG] default - data.Item:  {"processId":5,"lastName":"Boone","timeOfDay":"AM","gradingFormat":"pass/fail","firstName":"Desmond","finalAttachment":"","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","eventAttachment":"","cost":150,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Dezi","appId":20,"description":"AWS Certified Developer - Associate","timeHour":"08","startYear":2020}
+[2021-03-15T16:03:04.921] [TRACE] default - users GET /
+[2021-03-15T16:03:04.924] [ERROR] default - null
+[2021-03-15T16:03:07.070] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:03:07.070] [DEBUG] default - User:  {}
+[2021-03-15T16:03:18.331] [DEBUG] default - users POST /:  {
+  username: 'Dezi',
+  password: 'Pass2',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:03:18.333] [TRACE] default - Login Function
+[2021-03-15T16:03:18.334] [DEBUG] default - Username: Dezi, Password: Pass2
+[2021-03-15T16:03:18.334] [TRACE] default - Get User By Name Function
+[2021-03-15T16:03:18.439] [DEBUG] default - data.Item:  {"awardedR":0,"processId":1,"password":"Pass2","admin":false,"totalR":1000,"access":"granted","pendingR":150,"username":"Dezi","jobTitle":"Employee","availableR":850}
+[2021-03-15T16:03:18.439] [INFO] default - loggedUser:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T16:03:22.372] [DEBUG] default - users GET /:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T16:03:22.374] [DEBUG] default - User:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T16:04:16.282] [TRACE] default - app POST /
+[2021-03-15T16:04:16.282] [DEBUG] default - {
+  appId: 318,
+  employee: 'Dezi',
+  submitMonth: 2,
+  submitDate: 15,
+  submitYear: 2021,
+  status: 'pending',
+  processId: 1,
+  approval: {
+    directSupervisor: 'pending',
+    departmentHead: 'pending',
+    benefitCoordinator: 'pending'
+  },
+  amountGranted: 0
+}
+[2021-03-15T16:04:16.288] [DEBUG] default - {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 660,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 340
+}
+[2021-03-15T16:04:16.299] [TRACE] default - rf POST /
+[2021-03-15T16:04:16.300] [DEBUG] default - {
+  username: 'Dezi',
+  firstName: 'Desmond',
+  lastName: 'Boone',
+  startMonth: '05',
+  startDate: '17',
+  startYear: '2021',
+  timeHour: '09',
+  timeMins: '15',
+  timeOfDay: 'AM',
+  location: 'Local',
+  description: 'Description',
+  cost: '850',
+  gradingFormat: 'None',
+  passingGrade: 'Default',
+  typeOfEvent: 'Seminar',
+  workJustification: 'Justification',
+  processId: 2,
+  eventAttachment: '',
+  approvalAttachment: '',
+  missedWork: 'Work that will be missed.',
+  appId: 318,
+  calculation: 510,
+  finalAttachment: '',
+  gradeDecision: '',
+  reimbursed: false
+}
+[2021-03-15T16:04:16.309] [TRACE] default - ind GET /
+[2021-03-15T16:04:16.309] [TRACE] default - Get the application based off of the employee that submitted it.
+[2021-03-15T16:04:16.381] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:04:16.382] [DEBUG] default - true
+[2021-03-15T16:04:16.385] [DEBUG] default - {
+  Attributes: { awardedR: 0, pendingR: 660, password: 'Pass2', availableR: 340 }
+}
+[2021-03-15T16:04:16.388] [INFO] default - Successfully added application
+[2021-03-15T16:04:16.389] [DEBUG] default - true
+[2021-03-15T16:04:49.897] [TRACE] default - users GET /
+[2021-03-15T16:04:49.898] [ERROR] default - null
+[2021-03-15T16:04:51.784] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:04:51.785] [DEBUG] default - User:  {}
+[2021-03-15T16:05:00.677] [DEBUG] default - users POST /:  {
+  username: 'Jay',
+  password: 'Pass1',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:05:00.679] [TRACE] default - Login Function
+[2021-03-15T16:05:00.679] [DEBUG] default - Username: Jay, Password: Pass1
+[2021-03-15T16:05:00.680] [TRACE] default - Get User By Name Function
+[2021-03-15T16:05:00.768] [DEBUG] default - data.Item:  {"awardedR":0,"processId":1,"password":"Pass1","admin":false,"totalR":1000,"access":"granted","pendingR":150,"username":"Jay","jobTitle":"Employee","availableR":850}
+[2021-03-15T16:05:00.769] [INFO] default - loggedUser:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass1',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Jay',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T16:05:04.509] [DEBUG] default - users GET /:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass1',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Jay',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T16:05:04.510] [DEBUG] default - User:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass1',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Jay',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T16:06:04.398] [TRACE] default - ind GET /
+[2021-03-15T16:06:04.399] [TRACE] default - Get the application based off of the employee that submitted it.
+[2021-03-15T16:06:04.402] [TRACE] default - app POST /
+[2021-03-15T16:06:04.403] [DEBUG] default - {
+  appId: 68,
+  employee: 'Jay',
+  submitMonth: 2,
+  submitDate: 15,
+  submitYear: 2021,
+  status: 'pending',
+  processId: 1,
+  approval: {
+    directSupervisor: 'pending',
+    departmentHead: 'pending',
+    benefitCoordinator: 'pending'
+  },
+  amountGranted: 0
+}
+[2021-03-15T16:06:04.407] [DEBUG] default - {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass1',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 350,
+  username: 'Jay',
+  jobTitle: 'Employee',
+  availableR: 650
+}
+[2021-03-15T16:06:04.412] [TRACE] default - rf POST /
+[2021-03-15T16:06:04.413] [DEBUG] default - {
+  username: 'Jay',
+  firstName: 'Jayland',
+  lastName: 'Boone',
+  startMonth: '08',
+  startDate: '01',
+  startYear: '2021',
+  timeHour: '06',
+  timeMins: '30',
+  timeOfDay: 'PM',
+  location: 'Online',
+  description: 'Event description',
+  cost: '250',
+  gradingFormat: 'Graded',
+  passingGrade: 'C-',
+  typeOfEvent: 'University Course',
+  workJustification: 'Justification',
+  processId: 2,
+  eventAttachment: '',
+  approvalAttachment: '',
+  missedWork: 'None',
+  appId: 68,
+  calculation: 200,
+  finalAttachment: '',
+  gradeDecision: '',
+  reimbursed: false
+}
+[2021-03-15T16:06:04.575] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:06:04.575] [DEBUG] default - true
+[2021-03-15T16:06:04.608] [DEBUG] default - {
+  Attributes: { awardedR: 0, pendingR: 350, password: 'Pass1', availableR: 650 }
+}
+[2021-03-15T16:06:04.611] [INFO] default - Successfully added application
+[2021-03-15T16:06:04.611] [DEBUG] default - true
+[2021-03-15T16:06:16.134] [TRACE] default - users GET /
+[2021-03-15T16:06:16.136] [ERROR] default - null
+[2021-03-15T16:06:17.751] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:06:17.752] [DEBUG] default - User:  {}
+[2021-03-15T16:06:22.862] [DEBUG] default - users POST /:  {
+  username: 'Tequesha',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:06:22.864] [TRACE] default - Login Function
+[2021-03-15T16:06:22.864] [DEBUG] default - Username: Tequesha, Password: Enter
+[2021-03-15T16:06:22.865] [TRACE] default - Get User By Name Function
+[2021-03-15T16:06:22.962] [DEBUG] default - data.Item:  {"access":"granted","processId":2,"password":"Enter","username":"Tequesha","admin":true,"jobTitle":"Direct Supervisor"}
+[2021-03-15T16:06:22.963] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:06:26.451] [TRACE] default - app GET /
+[2021-03-15T16:06:26.452] [TRACE] default - Get All Application Function
+[2021-03-15T16:06:26.454] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:06:26.456] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:06:26.513] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:06:27.595] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:06:27.596] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:06:27.695] [DEBUG] default - data.Item:  {"processId":5,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:06:31.987] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:06:31.988] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:06:33.783] [TRACE] default - app GET /
+[2021-03-15T16:06:33.783] [TRACE] default - Get All Application Function
+[2021-03-15T16:06:33.787] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:06:33.789] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:06:33.881] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:06:40.662] [TRACE] default - rf GET /:id 318
+[2021-03-15T16:06:40.663] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:06:40.753] [DEBUG] default - data.Item:  {"processId":2,"lastName":"Boone","timeOfDay":"AM","gradingFormat":"None","firstName":"Desmond","finalAttachment":"","calculation":510,"reimbursed":false,"startDate":"17","missedWork":"Work that will be missed.","startMonth":"05","timeMins":"15","location":"Local","typeOfEvent":"Seminar","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","eventAttachment":"","cost":"850","workJustification":"Justification","username":"Dezi","appId":318,"description":"Description","timeHour":"09","startYear":"2021"}
+[2021-03-15T16:06:49.795] [TRACE] default - app GET /:id
+[2021-03-15T16:06:49.796] [TRACE] default - Get Application by Id
+[2021-03-15T16:06:49.811] [TRACE] default - rf PUT /
+[2021-03-15T16:06:49.812] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'AM',
+  gradingFormat: 'None',
+  firstName: 'Desmond',
+  finalAttachment: '',
+  calculation: 510,
+  reimbursed: false,
+  startDate: '17',
+  missedWork: 'Work that will be missed.',
+  startMonth: '05',
+  timeMins: '15',
+  location: 'Local',
+  typeOfEvent: 'Seminar',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: '',
+  cost: '850',
+  workJustification: 'Justification',
+  username: 'Dezi',
+  appId: 318,
+  description: 'Description',
+  timeHour: '09',
+  startYear: '2021'
+}
+[2021-03-15T16:06:49.818] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'AM',
+  gradingFormat: 'None',
+  firstName: 'Desmond',
+  finalAttachment: '',
+  calculation: 510,
+  reimbursed: false,
+  startDate: '17',
+  missedWork: 'Work that will be missed.',
+  startMonth: '05',
+  timeMins: '15',
+  location: 'Local',
+  typeOfEvent: 'Seminar',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: '',
+  cost: '850',
+  workJustification: 'Justification',
+  username: 'Dezi',
+  appId: 318,
+  description: 'Description',
+  timeHour: '09',
+  startYear: '2021'
+}
+[2021-03-15T16:06:49.902] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:08:15.744] [TRACE] default - app GET /
+[2021-03-15T16:08:15.745] [TRACE] default - Get All Application Function
+[2021-03-15T16:08:15.749] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:08:15.751] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:08:15.852] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:08:22.538] [TRACE] default - rf GET /:id 318
+[2021-03-15T16:08:22.538] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:08:22.716] [DEBUG] default - data.Item:  {"processId":3,"lastName":"Boone","timeOfDay":"AM","gradingFormat":"None","finalAttachment":"","firstName":"Desmond","calculation":510,"reimbursed":false,"startDate":"17","missedWork":"Work that will be missed.","startMonth":"05","timeMins":"15","location":"Local","typeOfEvent":"Seminar","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":"850","eventAttachment":"","workJustification":"Justification","username":"Dezi","appId":318,"description":"Description","timeHour":"09","startYear":"2021"}
+[2021-03-15T16:08:25.167] [TRACE] default - app GET /
+[2021-03-15T16:08:25.167] [TRACE] default - Get All Application Function
+[2021-03-15T16:08:25.229] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:08:27.264] [TRACE] default - rf GET /:id 68
+[2021-03-15T16:08:27.265] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:08:27.392] [DEBUG] default - data.Item:  {"processId":2,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"Graded","firstName":"Jayland","finalAttachment":"","calculation":200,"reimbursed":false,"startDate":"01","missedWork":"None","startMonth":"08","timeMins":"30","location":"Online","typeOfEvent":"University Course","gradeDecision":"","approvalAttachment":"","passingGrade":"C-","eventAttachment":"","cost":"250","workJustification":"Justification","username":"Jay","appId":68,"description":"Event description","timeHour":"06","startYear":"2021"}
+[2021-03-15T16:08:32.427] [TRACE] default - app GET /:id
+[2021-03-15T16:08:32.427] [TRACE] default - Get Application by Id
+[2021-03-15T16:08:32.430] [TRACE] default - rf PUT /
+[2021-03-15T16:08:32.430] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'Graded',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 200,
+  reimbursed: false,
+  startDate: '01',
+  missedWork: 'None',
+  startMonth: '08',
+  timeMins: '30',
+  location: 'Online',
+  typeOfEvent: 'University Course',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'C-',
+  eventAttachment: '',
+  cost: '250',
+  workJustification: 'Justification',
+  username: 'Jay',
+  appId: 68,
+  description: 'Event description',
+  timeHour: '06',
+  startYear: '2021'
+}
+[2021-03-15T16:08:32.434] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'Graded',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 200,
+  reimbursed: false,
+  startDate: '01',
+  missedWork: 'None',
+  startMonth: '08',
+  timeMins: '30',
+  location: 'Online',
+  typeOfEvent: 'University Course',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'C-',
+  eventAttachment: '',
+  cost: '250',
+  workJustification: 'Justification',
+  username: 'Jay',
+  appId: 68,
+  description: 'Event description',
+  timeHour: '06',
+  startYear: '2021'
+}
+[2021-03-15T16:08:32.547] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:08:39.153] [TRACE] default - app GET /
+[2021-03-15T16:08:39.154] [TRACE] default - Get All Application Function
+[2021-03-15T16:08:39.157] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:08:39.159] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:08:39.270] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:11:24.616] [TRACE] default - rf GET /:id 68
+[2021-03-15T16:11:24.617] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:11:24.714] [DEBUG] default - data.Item:  {"processId":3,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"Graded","finalAttachment":"","firstName":"Jayland","calculation":200,"reimbursed":false,"startDate":"01","missedWork":"None","startMonth":"08","timeMins":"30","location":"Online","typeOfEvent":"University Course","gradeDecision":"","approvalAttachment":"","passingGrade":"C-","cost":"250","eventAttachment":"","workJustification":"Justification","username":"Jay","appId":68,"description":"Event description","timeHour":"06","startYear":"2021"}
+[2021-03-15T16:11:26.977] [TRACE] default - users GET /
+[2021-03-15T16:11:26.979] [ERROR] default - null
+[2021-03-15T16:11:28.916] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:11:28.916] [DEBUG] default - User:  {}
+[2021-03-15T16:11:36.534] [DEBUG] default - users POST /:  {
+  username: 'Kaleb',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:11:36.536] [TRACE] default - Login Function
+[2021-03-15T16:11:36.536] [DEBUG] default - Username: Kaleb, Password: Enter
+[2021-03-15T16:11:36.536] [TRACE] default - Get User By Name Function
+[2021-03-15T16:11:36.642] [DEBUG] default - data.Item:  {"access":"granted","processId":3,"password":"Enter","username":"Kaleb","admin":true,"jobTitle":"Direct Supervisor / Department Head"}
+[2021-03-15T16:11:36.643] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:11:40.959] [TRACE] default - app GET /
+[2021-03-15T16:11:40.960] [TRACE] default - Get All Application Function
+[2021-03-15T16:11:40.963] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:11:40.964] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:11:41.017] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:11:43.445] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:11:43.446] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:11:43.544] [DEBUG] default - data.Item:  {"processId":5,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:11:49.251] [TRACE] default - app GET /
+[2021-03-15T16:11:49.251] [TRACE] default - Get All Application Function
+[2021-03-15T16:11:49.255] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:11:49.257] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:11:49.346] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:11:52.439] [TRACE] default - rf GET /:id 318
+[2021-03-15T16:11:52.439] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:11:52.501] [DEBUG] default - data.Item:  {"processId":3,"lastName":"Boone","timeOfDay":"AM","gradingFormat":"None","finalAttachment":"","firstName":"Desmond","calculation":510,"reimbursed":false,"startDate":"17","missedWork":"Work that will be missed.","startMonth":"05","timeMins":"15","location":"Local","typeOfEvent":"Seminar","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":"850","eventAttachment":"","workJustification":"Justification","username":"Dezi","appId":318,"description":"Description","timeHour":"09","startYear":"2021"}
+[2021-03-15T16:12:02.144] [TRACE] default - app GET /:id
+[2021-03-15T16:12:02.145] [TRACE] default - Get Application by Id
+[2021-03-15T16:12:02.147] [TRACE] default - rf PUT /
+[2021-03-15T16:12:02.148] [DEBUG] default - {
+  processId: 4,
+  lastName: 'Boone',
+  timeOfDay: 'AM',
+  gradingFormat: 'None',
+  finalAttachment: '',
+  firstName: 'Desmond',
+  calculation: 510,
+  reimbursed: false,
+  startDate: '17',
+  missedWork: 'Work that will be missed.',
+  startMonth: '05',
+  timeMins: '15',
+  location: 'Local',
+  typeOfEvent: 'Seminar',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: '850',
+  eventAttachment: '',
+  workJustification: 'Justification',
+  username: 'Dezi',
+  appId: 318,
+  description: 'Description',
+  timeHour: '09',
+  startYear: '2021'
+}
+[2021-03-15T16:12:02.151] [DEBUG] default - {
+  processId: 4,
+  lastName: 'Boone',
+  timeOfDay: 'AM',
+  gradingFormat: 'None',
+  finalAttachment: '',
+  firstName: 'Desmond',
+  calculation: 510,
+  reimbursed: false,
+  startDate: '17',
+  missedWork: 'Work that will be missed.',
+  startMonth: '05',
+  timeMins: '15',
+  location: 'Local',
+  typeOfEvent: 'Seminar',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: '850',
+  eventAttachment: '',
+  workJustification: 'Justification',
+  username: 'Dezi',
+  appId: 318,
+  description: 'Description',
+  timeHour: '09',
+  startYear: '2021'
+}
+[2021-03-15T16:12:02.236] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:12:39.498] [TRACE] default - app GET /
+[2021-03-15T16:12:39.499] [TRACE] default - Get All Application Function
+[2021-03-15T16:12:39.504] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:12:39.505] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:12:39.598] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:14:21.664] [TRACE] default - app GET /
+[2021-03-15T16:14:21.665] [TRACE] default - Get All Application Function
+[2021-03-15T16:14:21.766] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:14:27.892] [TRACE] default - rf GET /:id 68
+[2021-03-15T16:14:27.892] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:14:27.984] [DEBUG] default - data.Item:  {"processId":3,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"Graded","finalAttachment":"","firstName":"Jayland","calculation":200,"reimbursed":false,"startDate":"01","missedWork":"None","startMonth":"08","timeMins":"30","location":"Online","typeOfEvent":"University Course","gradeDecision":"","approvalAttachment":"","passingGrade":"C-","cost":"250","eventAttachment":"","workJustification":"Justification","username":"Jay","appId":68,"description":"Event description","timeHour":"06","startYear":"2021"}
+[2021-03-15T16:14:34.840] [TRACE] default - app GET /:id
+[2021-03-15T16:14:34.841] [TRACE] default - Get Application by Id
+[2021-03-15T16:14:34.843] [TRACE] default - rf PUT /
+[2021-03-15T16:14:34.843] [DEBUG] default - {
+  processId: 4,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'Graded',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 200,
+  reimbursed: false,
+  startDate: '01',
+  missedWork: 'None',
+  startMonth: '08',
+  timeMins: '30',
+  location: 'Online',
+  typeOfEvent: 'University Course',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'C-',
+  cost: '250',
+  eventAttachment: '',
+  workJustification: 'Justification',
+  username: 'Jay',
+  appId: 68,
+  description: 'Event description',
+  timeHour: '06',
+  startYear: '2021'
+}
+[2021-03-15T16:14:34.846] [DEBUG] default - {
+  processId: 4,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'Graded',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 200,
+  reimbursed: false,
+  startDate: '01',
+  missedWork: 'None',
+  startMonth: '08',
+  timeMins: '30',
+  location: 'Online',
+  typeOfEvent: 'University Course',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'C-',
+  cost: '250',
+  eventAttachment: '',
+  workJustification: 'Justification',
+  username: 'Jay',
+  appId: 68,
+  description: 'Event description',
+  timeHour: '06',
+  startYear: '2021'
+}
+[2021-03-15T16:14:34.944] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:15:01.576] [TRACE] default - app GET /
+[2021-03-15T16:15:01.577] [TRACE] default - Get All Application Function
+[2021-03-15T16:15:01.580] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:15:01.581] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:15:01.671] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:15:03.996] [TRACE] default - rf GET /:id 68
+[2021-03-15T16:15:03.996] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:15:04.054] [DEBUG] default - data.Item:  {"processId":4,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"Graded","finalAttachment":"","firstName":"Jayland","calculation":200,"reimbursed":false,"startDate":"01","missedWork":"None","startMonth":"08","timeMins":"30","location":"Online","typeOfEvent":"University Course","gradeDecision":"","approvalAttachment":"","passingGrade":"C-","cost":"250","eventAttachment":"","workJustification":"Justification","username":"Jay","appId":68,"description":"Event description","timeHour":"06","startYear":"2021"}
+[2021-03-15T16:16:08.146] [TRACE] default - rf GET /:id 68
+[2021-03-15T16:16:08.147] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:16:08.239] [DEBUG] default - data.Item:  {"processId":4,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"Graded","finalAttachment":"","firstName":"Jayland","calculation":200,"reimbursed":false,"startDate":"01","missedWork":"None","startMonth":"08","timeMins":"30","location":"Online","typeOfEvent":"University Course","gradeDecision":"","approvalAttachment":"","passingGrade":"C-","cost":"250","eventAttachment":"","workJustification":"Justification","username":"Jay","appId":68,"description":"Event description","timeHour":"06","startYear":"2021"}
+[2021-03-15T16:16:09.989] [TRACE] default - users GET /
+[2021-03-15T16:16:09.991] [ERROR] default - null
+[2021-03-15T16:16:11.739] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:16:11.739] [DEBUG] default - User:  {}
+[2021-03-15T16:16:17.461] [DEBUG] default - users POST /:  {
+  username: 'Millard',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:16:17.463] [TRACE] default - Login Function
+[2021-03-15T16:16:17.463] [DEBUG] default - Username: Millard, Password: Enter
+[2021-03-15T16:16:17.464] [TRACE] default - Get User By Name Function
+[2021-03-15T16:16:17.558] [DEBUG] default - data.Item:  {"access":"granted","processId":4,"password":"Enter","username":"Millard","admin":true,"jobTitle":"Benefits Coordinator"}
+[2021-03-15T16:16:17.559] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:16:20.320] [TRACE] default - app GET /
+[2021-03-15T16:16:20.320] [TRACE] default - Get All Application Function
+[2021-03-15T16:16:20.324] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:16:20.326] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:16:20.382] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:16:21.885] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:16:21.886] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:16:21.945] [DEBUG] default - data.Item:  {"processId":5,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:16:26.433] [TRACE] default - app GET /
+[2021-03-15T16:16:26.434] [TRACE] default - Get All Application Function
+[2021-03-15T16:16:26.437] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:16:26.439] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:16:26.523] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:16:30.500] [TRACE] default - rf GET /:id 318
+[2021-03-15T16:16:30.500] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:16:30.591] [DEBUG] default - data.Item:  {"processId":4,"lastName":"Boone","timeOfDay":"AM","gradingFormat":"None","finalAttachment":"","firstName":"Desmond","calculation":510,"reimbursed":false,"startDate":"17","missedWork":"Work that will be missed.","startMonth":"05","timeMins":"15","location":"Local","typeOfEvent":"Seminar","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":"850","eventAttachment":"","workJustification":"Justification","username":"Dezi","appId":318,"description":"Description","timeHour":"09","startYear":"2021"}
+[2021-03-15T16:16:37.461] [TRACE] default - app GET /:id
+[2021-03-15T16:16:37.461] [TRACE] default - Get Application by Id
+[2021-03-15T16:16:37.464] [TRACE] default - rf PUT /
+[2021-03-15T16:16:37.464] [DEBUG] default - {
+  processId: 5,
+  lastName: 'Boone',
+  timeOfDay: 'AM',
+  gradingFormat: 'None',
+  finalAttachment: '',
+  firstName: 'Desmond',
+  calculation: 510,
+  reimbursed: false,
+  startDate: '17',
+  missedWork: 'Work that will be missed.',
+  startMonth: '05',
+  timeMins: '15',
+  location: 'Local',
+  typeOfEvent: 'Seminar',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: '850',
+  eventAttachment: '',
+  workJustification: 'Justification',
+  username: 'Dezi',
+  appId: 318,
+  description: 'Description',
+  timeHour: '09',
+  startYear: '2021'
+}
+[2021-03-15T16:16:37.467] [DEBUG] default - {
+  processId: 5,
+  lastName: 'Boone',
+  timeOfDay: 'AM',
+  gradingFormat: 'None',
+  finalAttachment: '',
+  firstName: 'Desmond',
+  calculation: 510,
+  reimbursed: false,
+  startDate: '17',
+  missedWork: 'Work that will be missed.',
+  startMonth: '05',
+  timeMins: '15',
+  location: 'Local',
+  typeOfEvent: 'Seminar',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: '850',
+  eventAttachment: '',
+  workJustification: 'Justification',
+  username: 'Dezi',
+  appId: 318,
+  description: 'Description',
+  timeHour: '09',
+  startYear: '2021'
+}
+[2021-03-15T16:16:37.572] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:20:35.915] [TRACE] default - app GET /
+[2021-03-15T16:20:35.915] [TRACE] default - Get All Application Function
+[2021-03-15T16:20:35.918] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:20:35.919] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:20:36.015] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:20:39.383] [TRACE] default - rf GET /:id 68
+[2021-03-15T16:20:39.383] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:20:39.441] [DEBUG] default - data.Item:  {"processId":4,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"Graded","finalAttachment":"","firstName":"Jayland","calculation":200,"reimbursed":false,"startDate":"01","missedWork":"None","startMonth":"08","timeMins":"30","location":"Online","typeOfEvent":"University Course","gradeDecision":"","approvalAttachment":"","passingGrade":"C-","cost":"250","eventAttachment":"","workJustification":"Justification","username":"Jay","appId":68,"description":"Event description","timeHour":"06","startYear":"2021"}
+[2021-03-15T16:20:45.495] [TRACE] default - app GET /:id
+[2021-03-15T16:20:45.496] [TRACE] default - Get Application by Id
+[2021-03-15T16:20:45.499] [TRACE] default - rf PUT /
+[2021-03-15T16:20:45.499] [DEBUG] default - {
+  processId: 5,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'Graded',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 200,
+  reimbursed: false,
+  startDate: '01',
+  missedWork: 'None',
+  startMonth: '08',
+  timeMins: '30',
+  location: 'Online',
+  typeOfEvent: 'University Course',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'C-',
+  cost: '250',
+  eventAttachment: '',
+  workJustification: 'Justification',
+  username: 'Jay',
+  appId: 68,
+  description: 'Event description',
+  timeHour: '06',
+  startYear: '2021'
+}
+[2021-03-15T16:20:45.503] [DEBUG] default - {
+  processId: 5,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'Graded',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 200,
+  reimbursed: false,
+  startDate: '01',
+  missedWork: 'None',
+  startMonth: '08',
+  timeMins: '30',
+  location: 'Online',
+  typeOfEvent: 'University Course',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'C-',
+  cost: '250',
+  eventAttachment: '',
+  workJustification: 'Justification',
+  username: 'Jay',
+  appId: 68,
+  description: 'Event description',
+  timeHour: '06',
+  startYear: '2021'
+}
+[2021-03-15T16:20:45.665] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:22:31.240] [TRACE] default - app GET /
+[2021-03-15T16:22:31.241] [TRACE] default - Get All Application Function
+[2021-03-15T16:22:31.245] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:22:31.246] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:22:31.335] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Dezi',
+    appId: 318,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 1,
+    submitDate: 15,
+    submitMonth: 2,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 68,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  }
+]
+[2021-03-15T16:22:33.755] [TRACE] default - rf GET /:id 68
+[2021-03-15T16:22:33.755] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:22:33.813] [DEBUG] default - data.Item:  {"processId":5,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"Graded","finalAttachment":"","firstName":"Jayland","calculation":200,"reimbursed":false,"startDate":"01","missedWork":"None","startMonth":"08","timeMins":"30","location":"Online","typeOfEvent":"University Course","gradeDecision":"","approvalAttachment":"","passingGrade":"C-","cost":"250","eventAttachment":"","workJustification":"Justification","username":"Jay","appId":68,"description":"Event description","timeHour":"06","startYear":"2021"}
+[2021-03-15T16:22:56.833] [TRACE] default - Deleted application table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "APP_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/APP_TABLE",
+    "TableId": "6e4982e6-e0c2-445a-8b59-bb41faf3dbd6"
+  }
+}
+[2021-03-15T16:22:56.842] [TRACE] default - Deleted message table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "MSG_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE",
+    "TableId": "6e1a47fc-d5ba-47d8-a7af-5b35ec646f0d"
+  }
+}
+[2021-03-15T16:22:56.847] [TRACE] default - Deleted user table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "FORM_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE",
+    "TableId": "0761d31d-595b-47ba-bfa8-de4de5112f70"
+  }
+}
+[2021-03-15T16:22:56.996] [TRACE] default - Deleted user table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "USER_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE",
+    "TableId": "9548ea50-47c5-4f5a-98eb-2045cd3f6a49"
+  }
+}
+[2021-03-15T16:23:02.026] [TRACE] default - Application Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'APP_TABLE',
+    KeySchema: [ [Object], [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:22:58.923Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/APP_TABLE',
+    TableId: 'fdc174c6-39b7-4f53-87af-37b05987d6c1',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-03-15T16:23:02.137] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'FORM_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:22:59.024Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE',
+    TableId: 'a4be802b-da1f-4512-a976-20075eeb2eaf'
+  }
+}
+[2021-03-15T16:23:02.143] [TRACE] default - Message Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'MSG_TABLE',
+    KeySchema: [ [Object], [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:22:59.038Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE',
+    TableId: '7252bd96-9a65-4f68-8cce-ed3b70c7bc02',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-03-15T16:23:02.323] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'USER_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:22:59.219Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE',
+    TableId: '9c38463d-c3cf-4db0-9f3c-efa25e2976fa'
+  }
+}
+[2021-03-15T16:23:12.259] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:23:12.269] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:23:12.271] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:23:12.326] [TRACE] default - Add User Function
+[2021-03-15T16:23:12.327] [TRACE] default - Add User Function
+[2021-03-15T16:23:12.329] [TRACE] default - Add User Function
+[2021-03-15T16:23:12.331] [TRACE] default - Add User Function
+[2021-03-15T16:23:12.332] [TRACE] default - Add User Function
+[2021-03-15T16:23:12.334] [TRACE] default - Add User Function
+[2021-03-15T16:23:12.396] [INFO] default - Successfully added user
+[2021-03-15T16:23:12.398] [INFO] default - Successfully added user
+[2021-03-15T16:23:12.402] [INFO] default - Successfully added user
+[2021-03-15T16:23:12.417] [INFO] default - Successfully added user
+[2021-03-15T16:23:12.419] [INFO] default - Successfully added user
+[2021-03-15T16:23:12.421] [INFO] default - Successfully added user
+[2021-03-15T16:23:22.224] [INFO] default - Successfully added application
+[2021-03-15T16:23:22.228] [INFO] default - Successfully added application
+[2021-03-15T16:23:22.234] [INFO] default - Successfully added application
+[2021-03-15T16:23:27.246] [INFO] default - Successfully added message
+[2021-03-15T16:23:27.250] [INFO] default - Successfully added message
+[2021-03-15T16:23:27.252] [INFO] default - Successfully added message
+[2021-03-15T16:23:27.255] [INFO] default - Successfully added message
+[2021-03-15T16:23:27.261] [INFO] default - Successfully added message
+[2021-03-15T16:23:44.942] [TRACE] default - users GET /
+[2021-03-15T16:23:44.947] [ERROR] default - null
+[2021-03-15T16:23:48.183] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:23:48.184] [DEBUG] default - User:  {}
+[2021-03-15T16:23:54.093] [DEBUG] default - users POST /:  {
+  username: 'Tequesha',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:23:54.096] [TRACE] default - Login Function
+[2021-03-15T16:23:54.097] [DEBUG] default - Username: Tequesha, Password: Enter
+[2021-03-15T16:23:54.098] [TRACE] default - Get User By Name Function
+[2021-03-15T16:23:54.213] [DEBUG] default - data.Item:  {"access":"granted","processId":2,"password":"Enter","username":"Tequesha","admin":true,"jobTitle":"Direct Supervisor"}
+[2021-03-15T16:23:54.214] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:23:58.145] [TRACE] default - app GET /
+[2021-03-15T16:23:58.147] [TRACE] default - Get All Application Function
+[2021-03-15T16:23:58.154] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:23:58.157] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:23:58.273] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:24:00.174] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:24:00.175] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:24:00.268] [DEBUG] default - data.Item:  {"processId":2,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Jayland","finalAttachment":"","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":150,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:24:06.362] [TRACE] default - app GET /:id
+[2021-03-15T16:24:06.363] [TRACE] default - Get Application by Id
+[2021-03-15T16:24:06.371] [TRACE] default - rf PUT /
+[2021-03-15T16:24:06.372] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  cost: 150,
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T16:24:06.378] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  cost: 150,
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T16:24:06.493] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:24:26.809] [TRACE] default - msg GET /:username
+[2021-03-15T16:24:26.810] [TRACE] default - Tequesha
+[2021-03-15T16:24:26.811] [TRACE] default - Get the message sent by specific employee.
+[2021-03-15T16:24:26.817] [TRACE] default - msg POST /
+[2021-03-15T16:24:26.817] [DEBUG] default - {
+  sender: 'Tequesha',
+  recipient: 'Jay',
+  body: 'Testing updating of app.',
+  msgDate: 'Mon Mar 15 2021 16:23:58 GMT-0400 (Eastern Daylight Time)'
+}
+[2021-03-15T16:24:26.937] [INFO] default - Successfully added message
+[2021-03-15T16:24:26.938] [DEBUG] default - true
+[2021-03-15T16:24:29.679] [TRACE] default - app GET /
+[2021-03-15T16:24:29.679] [TRACE] default - Get All Application Function
+[2021-03-15T16:24:29.684] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:24:29.685] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:24:29.775] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:24:46.459] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:24:46.459] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:24:46.572] [DEBUG] default - data.Item:  {"processId":3,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:24:50.088] [TRACE] default - app GET /
+[2021-03-15T16:24:50.089] [TRACE] default - Get All Application Function
+[2021-03-15T16:24:50.092] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:24:50.093] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:24:50.159] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:27:34.117] [TRACE] default - app GET /
+[2021-03-15T16:27:34.121] [TRACE] default - Get All Application Function
+[2021-03-15T16:27:34.163] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:27:34.164] [DEBUG] default - User:  {}
+[2021-03-15T16:27:34.243] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:27:40.184] [TRACE] default - rf GET /:id 25
+[2021-03-15T16:27:40.185] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:27:40.278] [DEBUG] default - data.Item:  {"processId":6,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Desmond","finalAttachment":"C:\fakepathGrade from Prep Class.pdf","calculation":225,"reimbursed":true,"startDate":29,"missedWork":"None","startMonth":3,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification Preparation Class","gradeDecision":"Passing","approvalAttachment":"C:\fakepathDirect Supervisor Approval.msg","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":300,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career. The preparation class will increase my chances of passing.","username":"Dezi","appId":25,"description":"Preparation course for the AWS Certified Developer examination that was already approved.  Offers me a better chance of passing.","timeHour":"08","startYear":2020}
+[2021-03-15T16:27:42.162] [TRACE] default - app GET /
+[2021-03-15T16:27:42.162] [TRACE] default - Get All Application Function
+[2021-03-15T16:27:42.217] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:27:45.963] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:27:45.964] [DEBUG] default - User:  {}
+[2021-03-15T16:27:52.279] [DEBUG] default - users POST /:  {
+  username: 'Kaleb',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:27:52.282] [TRACE] default - Login Function
+[2021-03-15T16:27:52.282] [DEBUG] default - Username: Kaleb, Password: Enter
+[2021-03-15T16:27:52.283] [TRACE] default - Get User By Name Function
+[2021-03-15T16:27:52.376] [DEBUG] default - data.Item:  {"access":"granted","processId":3,"password":"Enter","username":"Kaleb","admin":true,"jobTitle":"Direct Supervisor / Department Head"}
+[2021-03-15T16:27:52.377] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:27:56.484] [TRACE] default - app GET /
+[2021-03-15T16:27:56.484] [TRACE] default - Get All Application Function
+[2021-03-15T16:27:56.489] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:27:56.490] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:27:56.547] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:27:59.593] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:27:59.594] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:27:59.684] [DEBUG] default - data.Item:  {"processId":3,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:28:06.214] [TRACE] default - app GET /:id
+[2021-03-15T16:28:06.215] [TRACE] default - Get Application by Id
+[2021-03-15T16:28:06.215] [DEBUG] default - id: 32 emp: undefined
+[2021-03-15T16:28:06.218] [TRACE] default - rf PUT /
+[2021-03-15T16:28:06.219] [DEBUG] default - {
+  processId: 4,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: 150,
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T16:28:06.222] [DEBUG] default - {
+  processId: 4,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: 150,
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T16:28:06.331] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:31:40.744] [TRACE] default - app GET /
+[2021-03-15T16:31:40.745] [TRACE] default - Get All Application Function
+[2021-03-15T16:31:40.747] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:31:40.749] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 3,
+  password: 'Enter',
+  username: 'Kaleb',
+  admin: true,
+  jobTitle: 'Direct Supervisor / Department Head'
+}
+[2021-03-15T16:31:40.834] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:31:47.586] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:31:47.586] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:31:47.675] [DEBUG] default - data.Item:  {"processId":4,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:31:50.531] [TRACE] default - users GET /
+[2021-03-15T16:31:50.532] [ERROR] default - null
+[2021-03-15T16:31:52.202] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:31:52.202] [DEBUG] default - User:  {}
+[2021-03-15T16:31:57.688] [DEBUG] default - users POST /:  {
+  username: 'Millard',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:31:57.691] [TRACE] default - Login Function
+[2021-03-15T16:31:57.691] [DEBUG] default - Username: Millard, Password: Enter
+[2021-03-15T16:31:57.692] [TRACE] default - Get User By Name Function
+[2021-03-15T16:31:57.773] [DEBUG] default - data.Item:  {"access":"granted","processId":4,"password":"Enter","username":"Millard","admin":true,"jobTitle":"Benefits Coordinator"}
+[2021-03-15T16:31:57.774] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:32:02.367] [TRACE] default - app GET /
+[2021-03-15T16:32:02.368] [TRACE] default - Get All Application Function
+[2021-03-15T16:32:02.379] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:32:02.381] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 4,
+  password: 'Enter',
+  username: 'Millard',
+  admin: true,
+  jobTitle: 'Benefits Coordinator'
+}
+[2021-03-15T16:32:02.467] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:32:07.384] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:32:07.384] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:32:07.462] [DEBUG] default - data.Item:  {"processId":4,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","finalAttachment":"","firstName":"Jayland","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","cost":150,"eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:32:15.615] [TRACE] default - app GET /:id
+[2021-03-15T16:32:15.615] [TRACE] default - Get Application by Id
+[2021-03-15T16:32:15.616] [DEBUG] default - id: [object Object] emp: undefined
+[2021-03-15T16:32:15.631] [TRACE] default - rf PUT /
+[2021-03-15T16:32:15.631] [DEBUG] default - {
+  processId: 5,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: 150,
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T16:32:15.634] [DEBUG] default - {
+  processId: 5,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  finalAttachment: '',
+  firstName: 'Jayland',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  cost: 150,
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T16:32:15.698] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T16:48:47.981] [TRACE] default - Deleted message table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "MSG_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE",
+    "TableId": "7252bd96-9a65-4f68-8cce-ed3b70c7bc02"
+  }
+}
+[2021-03-15T16:48:47.989] [TRACE] default - Deleted application table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "APP_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/APP_TABLE",
+    "TableId": "fdc174c6-39b7-4f53-87af-37b05987d6c1"
+  }
+}
+[2021-03-15T16:48:48.096] [TRACE] default - Deleted user table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "USER_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE",
+    "TableId": "9c38463d-c3cf-4db0-9f3c-efa25e2976fa"
+  }
+}
+[2021-03-15T16:48:48.265] [TRACE] default - Deleted user table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "FORM_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE",
+    "TableId": "a4be802b-da1f-4512-a976-20075eeb2eaf"
+  }
+}
+[2021-03-15T16:48:53.144] [ERROR] default - Error ValidationException: One or more parameter values were invalid: Some index key attributes are not defined in AttributeDefinitions. Keys: [employee], AttributeDefinitions: [appId]
+    at Request.extractError (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\protocol\json.js:52:27)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:688:14)
+    at Request.transition (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:690:12)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  code: 'ValidationException',
+  time: 2021-03-15T20:48:53.144Z,
+  requestId: 'AT06G6KBGR95EPHET120MH76KBVV4KQNSO5AEMVJF66Q9ASUAAJG',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 27.444707767148667
+}
+[2021-03-15T16:48:53.160] [TRACE] default - Message Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'MSG_TABLE',
+    KeySchema: [ [Object], [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:48:50.051Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE',
+    TableId: '4bbe9211-0f4a-4416-bdf0-c750124158ee',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-03-15T16:48:53.216] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'USER_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:48:50.122Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE',
+    TableId: 'c6e3ba18-40b2-4884-b873-62b8d9a96f4f'
+  }
+}
+[2021-03-15T16:48:53.363] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'FORM_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:48:50.271Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE',
+    TableId: 'fd2e83fe-048b-475e-9bc3-584c62a42d3d'
+  }
+}
+[2021-03-15T16:49:03.235] [TRACE] default - Add User Function
+[2021-03-15T16:49:03.254] [TRACE] default - Add User Function
+[2021-03-15T16:49:03.258] [TRACE] default - Add User Function
+[2021-03-15T16:49:03.261] [TRACE] default - Add User Function
+[2021-03-15T16:49:03.264] [TRACE] default - Add User Function
+[2021-03-15T16:49:03.268] [TRACE] default - Add User Function
+[2021-03-15T16:49:03.343] [INFO] default - Successfully added user
+[2021-03-15T16:49:03.344] [INFO] default - Successfully added user
+[2021-03-15T16:49:03.346] [INFO] default - Successfully added user
+[2021-03-15T16:49:03.348] [INFO] default - Successfully added user
+[2021-03-15T16:49:03.349] [INFO] default - Successfully added user
+[2021-03-15T16:49:03.367] [INFO] default - Successfully added user
+[2021-03-15T16:49:03.448] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:49:03.450] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:49:03.457] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:49:18.317] [INFO] default - Successfully added message
+[2021-03-15T16:49:18.320] [INFO] default - Successfully added message
+[2021-03-15T16:49:18.324] [INFO] default - Successfully added message
+[2021-03-15T16:49:18.328] [INFO] default - Successfully added message
+[2021-03-15T16:49:18.330] [INFO] default - Successfully added message
+[2021-03-15T16:49:39.117] [TRACE] default - users GET /
+[2021-03-15T16:49:39.123] [ERROR] default - null
+[2021-03-15T16:49:43.137] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:49:43.139] [DEBUG] default - User:  {}
+[2021-03-15T16:49:48.768] [DEBUG] default - users POST /:  {
+  username: 'Tequesha',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:49:48.771] [TRACE] default - Login Function
+[2021-03-15T16:49:48.772] [DEBUG] default - Username: Tequesha, Password: Enter
+[2021-03-15T16:49:48.773] [TRACE] default - Get User By Name Function
+[2021-03-15T16:49:48.897] [DEBUG] default - data.Item:  {"access":"granted","processId":2,"password":"Enter","username":"Tequesha","admin":true,"jobTitle":"Direct Supervisor"}
+[2021-03-15T16:49:48.899] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:49:53.443] [TRACE] default - app GET /
+[2021-03-15T16:49:53.444] [TRACE] default - Get All Application Function
+[2021-03-15T16:49:53.452] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:49:53.454] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:52:10.907] [ERROR] default - Unable to delete application table.  Error JSON:  {
+  "message": "Requested resource not found: Table: APP_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-03-15T20:52:10.906Z",
+  "requestId": "KF1JNN99D56FUGCJK04TFKE5J7VV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 32.64763883984134
+}
+[2021-03-15T16:52:10.915] [TRACE] default - Deleted user table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "USER_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE",
+    "TableId": "c6e3ba18-40b2-4884-b873-62b8d9a96f4f"
+  }
+}
+[2021-03-15T16:52:10.918] [TRACE] default - Deleted user table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "FORM_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE",
+    "TableId": "fd2e83fe-048b-475e-9bc3-584c62a42d3d"
+  }
+}
+[2021-03-15T16:52:11.057] [TRACE] default - Deleted message table.  Table description JSON:  {
+  "TableDescription": {
+    "TableName": "MSG_TABLE",
+    "TableStatus": "DELETING",
+    "ProvisionedThroughput": {
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 3,
+      "WriteCapacityUnits": 3
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE",
+    "TableId": "4bbe9211-0f4a-4416-bdf0-c750124158ee"
+  }
+}
+[2021-03-15T16:52:16.089] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'FORM_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:52:12.986Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE',
+    TableId: '245ba5fc-789b-4de6-b560-73b423cfb5a6'
+  }
+}
+[2021-03-15T16:52:16.225] [TRACE] default - Message Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'MSG_TABLE',
+    KeySchema: [ [Object], [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:52:13.094Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE',
+    TableId: 'b6f622fa-afb4-475b-a954-b870da597f7c',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-03-15T16:52:16.230] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'USER_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:52:13.134Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE',
+    TableId: '094c4fb7-8388-44b6-b88f-67f0e553311e'
+  }
+}
+[2021-03-15T16:52:16.422] [TRACE] default - Application Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'APP_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-03-15T20:52:13.308Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/APP_TABLE',
+    TableId: '845f0b50-251a-4c96-91ac-a1d1abb44241',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-03-15T16:52:26.206] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:52:26.207] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:52:26.211] [INFO] default - Successfully added reimbursement form
+[2021-03-15T16:52:26.240] [TRACE] default - Add User Function
+[2021-03-15T16:52:26.242] [TRACE] default - Add User Function
+[2021-03-15T16:52:26.243] [TRACE] default - Add User Function
+[2021-03-15T16:52:26.245] [TRACE] default - Add User Function
+[2021-03-15T16:52:26.246] [TRACE] default - Add User Function
+[2021-03-15T16:52:26.248] [TRACE] default - Add User Function
+[2021-03-15T16:52:26.320] [INFO] default - Successfully added user
+[2021-03-15T16:52:26.327] [INFO] default - Successfully added user
+[2021-03-15T16:52:26.329] [INFO] default - Successfully added user
+[2021-03-15T16:52:26.331] [INFO] default - Successfully added user
+[2021-03-15T16:52:26.334] [INFO] default - Successfully added user
+[2021-03-15T16:52:26.336] [INFO] default - Successfully added user
+[2021-03-15T16:52:36.514] [INFO] default - Successfully added application
+[2021-03-15T16:52:36.523] [INFO] default - Successfully added application
+[2021-03-15T16:52:36.526] [INFO] default - Successfully added application
+[2021-03-15T16:52:41.380] [INFO] default - Successfully added message
+[2021-03-15T16:52:41.383] [INFO] default - Successfully added message
+[2021-03-15T16:52:41.385] [INFO] default - Successfully added message
+[2021-03-15T16:52:41.388] [INFO] default - Successfully added message
+[2021-03-15T16:52:41.390] [INFO] default - Successfully added message
+[2021-03-15T16:52:54.833] [TRACE] default - app GET /
+[2021-03-15T16:52:54.836] [TRACE] default - Get All Application Function
+[2021-03-15T16:52:54.859] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:52:54.859] [DEBUG] default - User:  {}
+[2021-03-15T16:52:54.950] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:52:56.223] [DEBUG] default - users GET /:  undefined
+[2021-03-15T16:52:56.224] [DEBUG] default - User:  {}
+[2021-03-15T16:53:02.047] [DEBUG] default - users POST /:  {
+  username: 'Tequesha',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T16:53:02.050] [TRACE] default - Login Function
+[2021-03-15T16:53:02.050] [DEBUG] default - Username: Tequesha, Password: Enter
+[2021-03-15T16:53:02.051] [TRACE] default - Get User By Name Function
+[2021-03-15T16:53:02.148] [DEBUG] default - data.Item:  {"access":"granted","processId":2,"password":"Enter","username":"Tequesha","admin":true,"jobTitle":"Direct Supervisor"}
+[2021-03-15T16:53:02.148] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:53:03.946] [TRACE] default - app GET /
+[2021-03-15T16:53:03.946] [TRACE] default - Get All Application Function
+[2021-03-15T16:53:03.952] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:53:03.954] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-03-15T16:53:04.019] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2021-03-15T16:53:07.841] [TRACE] default - rf GET /:id 32
+[2021-03-15T16:53:07.842] [TRACE] default - Get Form By Id Function
+[2021-03-15T16:53:07.935] [DEBUG] default - data.Item:  {"processId":2,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Jayland","finalAttachment":"","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":150,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Jay","appId":32,"description":"AWS Certified Developer - Associate","timeHour":"12","startYear":2021}
+[2021-03-15T16:53:17.456] [TRACE] default - app GET /:id
+[2021-03-15T16:53:17.457] [TRACE] default - Get Application by Id
+[2021-03-15T16:53:17.457] [DEBUG] default - id: 32
+[2021-03-15T16:53:17.461] [TRACE] default - rf PUT /
+[2021-03-15T16:53:17.462] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  cost: 150,
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T16:53:17.465] [DEBUG] default - {
+  processId: 3,
+  lastName: 'Boone',
+  timeOfDay: 'PM',
+  gradingFormat: 'pass/fail',
+  firstName: 'Jayland',
+  finalAttachment: '',
+  calculation: 150,
+  reimbursed: false,
+  startDate: 14,
+  missedWork: 'None',
+  startMonth: 8,
+  timeMins: '00',
+  location: 'Online Proctored',
+  typeOfEvent: 'Certification',
+  gradeDecision: '',
+  approvalAttachment: '',
+  passingGrade: 'Default',
+  eventAttachment: 'C:\fakepathAmazon AWS Certifications.pdf',
+  cost: 150,
+  workJustification: 'This certificatation is intended to validate my technical skills so that I can grow my career.',
+  username: 'Jay',
+  appId: 32,
+  description: 'AWS Certified Developer - Associate',
+  timeHour: '12',
+  startYear: 2021
+}
+[2021-03-15T16:53:17.537] [INFO] default - Reimbursement Form Updated.
+[2021-03-15T17:05:09.717] [TRACE] default - users GET /
+[2021-03-15T17:05:09.723] [ERROR] default - null
+[2021-03-15T17:05:11.743] [DEBUG] default - users GET /:  undefined
+[2021-03-15T17:05:11.743] [DEBUG] default - User:  {}
+[2021-03-15T17:05:21.137] [DEBUG] default - users POST /:  {
+  username: 'Dezi',
+  password: 'Pass2',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T17:05:21.139] [TRACE] default - Login Function
+[2021-03-15T17:05:21.140] [DEBUG] default - Username: Dezi, Password: Pass2
+[2021-03-15T17:05:21.141] [TRACE] default - Get User By Name Function
+[2021-03-15T17:05:21.255] [DEBUG] default - data.Item:  {"awardedR":0,"processId":1,"password":"Pass2","admin":false,"totalR":1000,"access":"granted","pendingR":150,"username":"Dezi","jobTitle":"Employee","availableR":850}
+[2021-03-15T17:05:21.256] [INFO] default - loggedUser:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T17:05:25.691] [DEBUG] default - users GET /:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T17:05:25.693] [DEBUG] default - User:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T17:05:25.829] [TRACE] default - ind GET /
+[2021-03-15T17:05:25.830] [TRACE] default - Get the application based off of the employee that submitted it.
+[2021-03-15T17:05:29.463] [TRACE] default - rf GET /:id 25
+[2021-03-15T17:05:29.464] [TRACE] default - Get Form By Id Function
+[2021-03-15T17:05:29.540] [DEBUG] default - data.Item:  {"processId":6,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Desmond","finalAttachment":"C:\fakepathGrade from Prep Class.pdf","calculation":225,"reimbursed":true,"startDate":29,"missedWork":"None","startMonth":3,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification Preparation Class","gradeDecision":"Passing","approvalAttachment":"C:\fakepathDirect Supervisor Approval.msg","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":300,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career. The preparation class will increase my chances of passing.","username":"Dezi","appId":25,"description":"Preparation course for the AWS Certified Developer examination that was already approved.  Offers me a better chance of passing.","timeHour":"08","startYear":2020}
+[2021-03-15T17:05:31.737] [TRACE] default - app DELETE /:id
+[2021-03-15T17:05:31.737] [DEBUG] default - {}
+[2021-03-15T17:05:31.739] [TRACE] default - Remove Application Function
+[2021-03-15T17:05:31.744] [TRACE] default - My DELETE /:id
+[2021-03-15T17:05:31.745] [DEBUG] default - {}
+[2021-03-15T17:05:31.801] [ERROR] default - ValidationException: The provided key element does not match the schema
+    at Request.extractError (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\protocol\json.js:52:27)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:688:14)
+    at Request.transition (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:690:12)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  code: 'ValidationException',
+  time: 2021-03-15T21:05:31.801Z,
+  requestId: '5JRAS9E8BUFIK7SAA4UNV66E1BVV4KQNSO5AEMVJF66Q9ASUAAJG',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 5.204850425225138
+}
+[2021-03-15T17:05:31.806] [DEBUG] default - false
+[2021-03-15T17:05:31.809] [ERROR] default - ValidationException: The provided key element does not match the schema
+    at Request.extractError (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\protocol\json.js:52:27)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:688:14)
+    at Request.transition (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:690:12)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  code: 'ValidationException',
+  time: 2021-03-15T21:05:31.809Z,
+  requestId: '1PLT2N1FMHKPIINV5T80LIGSH3VV4KQNSO5AEMVJF66Q9ASUAAJG',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 3.8676643709914083
+}
+[2021-03-15T17:05:31.813] [DEBUG] default - false
+[2021-03-15T17:05:31.869] [TRACE] default - ind GET /
+[2021-03-15T17:05:31.870] [TRACE] default - Get the application based off of the employee that submitted it.
+[2021-03-15T17:05:39.740] [TRACE] default - rf GET /:id 20
+[2021-03-15T17:05:39.740] [TRACE] default - Get Form By Id Function
+[2021-03-15T17:05:39.829] [DEBUG] default - data.Item:  {"processId":5,"lastName":"Boone","timeOfDay":"AM","gradingFormat":"pass/fail","firstName":"Desmond","finalAttachment":"","calculation":150,"reimbursed":false,"startDate":14,"missedWork":"None","startMonth":8,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification","gradeDecision":"","approvalAttachment":"","passingGrade":"Default","eventAttachment":"","cost":150,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career.","username":"Dezi","appId":20,"description":"AWS Certified Developer - Associate","timeHour":"08","startYear":2020}
+[2021-03-15T17:05:42.474] [TRACE] default - app DELETE /:id
+[2021-03-15T17:05:42.474] [DEBUG] default - {}
+[2021-03-15T17:05:42.475] [TRACE] default - Remove Application Function
+[2021-03-15T17:05:42.478] [TRACE] default - My DELETE /:id
+[2021-03-15T17:05:42.479] [DEBUG] default - {}
+[2021-03-15T17:05:42.536] [ERROR] default - ValidationException: The provided key element does not match the schema
+    at Request.extractError (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\protocol\json.js:52:27)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:688:14)
+    at Request.transition (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:690:12)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  code: 'ValidationException',
+  time: 2021-03-15T21:05:42.536Z,
+  requestId: '2HOBVRMINSSRQIDV7IOJQ7U81VVV4KQNSO5AEMVJF66Q9ASUAAJG',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 22.577789308193076
+}
+[2021-03-15T17:05:42.540] [DEBUG] default - false
+[2021-03-15T17:05:42.579] [ERROR] default - ValidationException: The provided key element does not match the schema
+    at Request.extractError (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\protocol\json.js:52:27)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:688:14)
+    at Request.transition (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:690:12)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  code: 'ValidationException',
+  time: 2021-03-15T21:05:42.579Z,
+  requestId: 'CKP8R5RB3P9TPV41J7KE3MJ73BVV4KQNSO5AEMVJF66Q9ASUAAJG',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 48.09145085583606
+}
+[2021-03-15T17:05:42.583] [DEBUG] default - false
+[2021-03-15T17:05:42.640] [TRACE] default - ind GET /
+[2021-03-15T17:05:42.641] [TRACE] default - Get the application based off of the employee that submitted it.
+[2021-03-15T17:12:07.631] [DEBUG] default - users GET /:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T17:12:07.633] [DEBUG] default - User:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T17:12:07.782] [TRACE] default - ind GET /
+[2021-03-15T17:12:07.783] [TRACE] default - Get the application based off of the employee that submitted it.
+[2021-03-15T17:12:11.454] [TRACE] default - rf GET /:id 25
+[2021-03-15T17:12:11.455] [TRACE] default - Get Form By Id Function
+[2021-03-15T17:12:11.514] [DEBUG] default - data.Item:  {"processId":6,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Desmond","finalAttachment":"C:\fakepathGrade from Prep Class.pdf","calculation":225,"reimbursed":true,"startDate":29,"missedWork":"None","startMonth":3,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification Preparation Class","gradeDecision":"Passing","approvalAttachment":"C:\fakepathDirect Supervisor Approval.msg","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":300,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career. The preparation class will increase my chances of passing.","username":"Dezi","appId":25,"description":"Preparation course for the AWS Certified Developer examination that was already approved.  Offers me a better chance of passing.","timeHour":"08","startYear":2020}
+[2021-03-15T17:12:29.547] [TRACE] default - users GET /
+[2021-03-15T17:12:29.553] [ERROR] default - null
+[2021-03-15T17:12:33.119] [DEBUG] default - users GET /:  undefined
+[2021-03-15T17:12:33.120] [DEBUG] default - User:  {}
+[2021-03-15T17:12:41.830] [DEBUG] default - users POST /:  {
+  username: 'Dezi',
+  password: 'Pass2',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-03-15T17:12:41.833] [TRACE] default - Login Function
+[2021-03-15T17:12:41.833] [DEBUG] default - Username: Dezi, Password: Pass2
+[2021-03-15T17:12:41.834] [TRACE] default - Get User By Name Function
+[2021-03-15T17:12:41.931] [DEBUG] default - data.Item:  {"awardedR":0,"processId":1,"password":"Pass2","admin":false,"totalR":1000,"access":"granted","pendingR":150,"username":"Dezi","jobTitle":"Employee","availableR":850}
+[2021-03-15T17:12:41.932] [INFO] default - loggedUser:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T17:12:46.562] [DEBUG] default - users GET /:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T17:12:46.563] [DEBUG] default - User:  {
+  awardedR: 0,
+  processId: 1,
+  password: 'Pass2',
+  admin: false,
+  totalR: 1000,
+  access: 'granted',
+  pendingR: 150,
+  username: 'Dezi',
+  jobTitle: 'Employee',
+  availableR: 850
+}
+[2021-03-15T17:12:46.667] [TRACE] default - ind GET /
+[2021-03-15T17:12:46.668] [TRACE] default - Get the application based off of the employee that submitted it.
+[2021-03-15T17:12:51.834] [TRACE] default - rf GET /:id 25
+[2021-03-15T17:12:51.835] [TRACE] default - Get Form By Id Function
+[2021-03-15T17:12:51.924] [DEBUG] default - data.Item:  {"processId":6,"lastName":"Boone","timeOfDay":"PM","gradingFormat":"pass/fail","firstName":"Desmond","finalAttachment":"C:\fakepathGrade from Prep Class.pdf","calculation":225,"reimbursed":true,"startDate":29,"missedWork":"None","startMonth":3,"timeMins":"00","location":"Online Proctored","typeOfEvent":"Certification Preparation Class","gradeDecision":"Passing","approvalAttachment":"C:\fakepathDirect Supervisor Approval.msg","passingGrade":"Default","eventAttachment":"C:\fakepathAmazon AWS Certifications.pdf","cost":300,"workJustification":"This certificatation is intended to validate my technical skills so that I can grow my career. The preparation class will increase my chances of passing.","username":"Dezi","appId":25,"description":"Preparation course for the AWS Certified Developer examination that was already approved.  Offers me a better chance of passing.","timeHour":"08","startYear":2020}
+[2021-03-15T17:12:54.164] [TRACE] default - app DELETE /:id
+[2021-03-15T17:12:54.164] [DEBUG] default - {}
+[2021-03-15T17:12:54.165] [TRACE] default - Remove Application Function
+[2021-03-15T17:12:54.169] [TRACE] default - My DELETE /:id
+[2021-03-15T17:12:54.170] [DEBUG] default - {}
+[2021-03-15T17:12:54.239] [ERROR] default - ValidationException: The provided key element does not match the schema
+    at Request.extractError (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\protocol\json.js:52:27)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:106:20)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:78:10)
+    at Request.emit (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:688:14)
+    at Request.transition (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:22:10)
+    at AcceptorStateMachine.runTo (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:14:12)
+    at C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\state_machine.js:26:10
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:38:9)
+    at Request.<anonymous> (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\request.js:690:12)
+    at Request.callListeners (C:\Users\gatli\all-repos\GitHub-TG\projectOne\tuition-reimbursement-system\tuitiontlg\node_modules\aws-sdk\lib\sequential_executor.js:116:18) {
+  code: 'ValidationException',
+  time: 2021-03-15T21:12:54.238Z,
+  requestId: 'JSHQHJMDGC00O26UE1IHVO6QHVVV4KQNSO5AEMVJF66Q9ASUAAJG',
+  statusCode: 400,
+  retryable: false,
+  retryDelay: 38.87213244754209
+}
+[2021-03-15T17:12:54.244] [DEBUG] default - false
+[2021-03-15T17:12:54.247] [DEBUG] default - {}
+[2021-03-15T17:12:54.248] [INFO] default - Successfully deleted the application
+[2021-03-15T17:12:54.248] [DEBUG] default - true
+[2021-03-15T17:12:54.289] [TRACE] default - ind GET /
+[2021-03-15T17:12:54.289] [TRACE] default - Get the application based off of the employee that submitted it.

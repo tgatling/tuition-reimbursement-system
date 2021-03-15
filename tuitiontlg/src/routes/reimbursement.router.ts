@@ -12,13 +12,14 @@ reimbursementRouter.get('/', function(req, res, next) {
 });
 
 reimbursementRouter.get('/:id', function(req, res, next) {
-    log.trace('rf get /:id', req.params.id);
+    log.trace('rf GET /:id', req.params.id);
     reimbursementFormService.getFormById(Number(req.params.id)).then((form)=>{
         res.send(JSON.stringify(form));
     });
 })
 
 reimbursementRouter.post('/', (req, res, next) => {
+    log.trace('rf POST /')
     log.debug(req.body);
     reimbursementFormService.addForm(req.body).then((data)=> {
         log.debug(data);
@@ -30,6 +31,7 @@ reimbursementRouter.post('/', (req, res, next) => {
 });
 
 reimbursementRouter.put('/', (req, res, next) => {
+    log.trace('rf PUT /');
     log.debug(req.body);
     reimbursementFormService.updateForm(req.body).then((data)=> {
         res.send(data);

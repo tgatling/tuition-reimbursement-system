@@ -48,7 +48,7 @@ function FormInfoComponent(prop: formProp) {
 
 
     function handleDelete() {
-        applicationService.deleteApplication(application).then(() => {
+        applicationService.deleteApplication(application.appId).then(() => {
             dispatch(changeApplication(new Application()));
         });
         myService.deleteForm(form).then(() => {

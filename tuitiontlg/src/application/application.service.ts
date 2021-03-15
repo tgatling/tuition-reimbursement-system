@@ -45,13 +45,13 @@ class ApplicationService {
 
     
     // Get a particular application by the id.
-    async getApplicationById(id: string, employee: string): Promise <Application | null> {
+    async getApplicationById(id: string): Promise <Application | null> {
         log.trace('Get Application by Id');
+        log.debug(`id: ${id}`);
         const params = {
             TableName: 'APP_TABLE',
             Key: {
                 'appId': id,
-                'employee': employee
             }
         };
         return await this.doc.get(params).promise().then((data) => {
@@ -59,6 +59,7 @@ class ApplicationService {
                 log.debug('data.Item: ', JSON.stringify(data.Item));
                 return data.Item as Application;
             } else{
+                log.debug('returning null for get application by id');
                 return null;
             }
         });
@@ -88,13 +89,12 @@ class ApplicationService {
     }
 
     // Delete an application from the system.
-    async removeApplication(application: Application): Promise<boolean>{
+    async removeApplication(id: number): Promise<boolean>{
         log.trace('Remove Application Function')
         const params = {
             TableName: 'APP_TABLE',
             Key: {
-                'appId': application.appId,
-                'employee': application.employee
+                'appId': id,
             }
         };
         return await this.doc.delete(params).promise().then((result) => {
@@ -114,18 +114,27 @@ class ApplicationService {
         Key: {
             'appId': application.appId
         },
-        UpdateExpression: 'set amountGranted = :amountGranted, status = :status, approval = :approval, processId =  :processId',
+        UpdateExpression: `set employee=:emp, submitMonth=:sm, submitDate=:sd, 
+        submitYear=:sy, status=:stat, processId=:pid, approval=:a, amountGranted=:ag`,
         ExpressionAttributeValues: {
-            ':amount': application.amountGranted,
-            ':status': application.status,
-            ':approval': application.approval,
-            ':processId': application.processId,
+            ':emp': application.employee,
+            ':sm': application.submitMonth,
+            ':sd': application.submitDate,
+            ':sy': application.submitYear,
+            ':stat': application.status,
+            ':pid': application.processId,
+            ':a': application.approval,
+            ':ag': application.amountGranted
         },
         ExpressionAttributeNames: {
-            '#amount': 'amount',
+            '#employee': 'employee',
+            '#submitMonth': 'submitMonth',
+            '#submitDate': 'submitDate',
+            '#submitYear': 'submitYear',
             '#status': 'status',
+            '#processId': 'processId',
             '#approval': 'approval',
-            '#processId': 'processId'
+            '#amountGranted': 'amountGranted'
         },
         ReturnValues: 'UPDATE_NEW'
         };
@@ -133,6 +142,7 @@ class ApplicationService {
             log.debug(data);
             return true;
         }).catch((err) => {
+            log.trace('Error for update');
             log.error(err);
             return false;
         });
