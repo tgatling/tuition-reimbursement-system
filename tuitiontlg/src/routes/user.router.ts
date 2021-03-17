@@ -34,6 +34,7 @@ userRouter.delete('/', (req, res, next) => {
 
 // updateUser(user)
 userRouter.put('/', (req, res, next) => {
+    log.trace('users PUT /');
     log.debug(req.body);
     userService.updateUser(req.body).then((data)=> {
         res.send(data);
