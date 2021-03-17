@@ -58,7 +58,6 @@ var User = /** @class */ (function () {
     return User;
 }());
 exports.User = User;
-var allUsers = [];
 // Register new user account
 function registerUser(username, password) {
     log_1.default.trace('Register User');

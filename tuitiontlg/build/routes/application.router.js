@@ -22,7 +22,7 @@ applicationRouter.get('/:id', function (req, res, next) {
 });
 applicationRouter.delete('/:id', function (req, res, next) {
     log_1.default.trace('app DELETE /:id');
-    log_1.default.debug(req.body);
+    log_1.default.debug(req.params.id);
     application_service_1.default.removeApplication(Number(req.params.id)).then(function (data) {
         log_1.default.debug(data);
         res.sendStatus(200);
