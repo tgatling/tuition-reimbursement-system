@@ -15,8 +15,6 @@ export class User{
     
 }
 
-let allUsers: User[] = [];
-
 // Register new user account
 export function registerUser(username: string, password: string) {
     log.trace('Register User');
