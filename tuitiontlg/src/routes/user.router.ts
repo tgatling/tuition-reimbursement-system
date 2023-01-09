@@ -27,7 +27,7 @@ userRouter.post('/', function (req: any, res, next) {
 
 // logout()
 userRouter.delete('/', (req, res, next) => {
-    log.trace('users GET /');
+    log.trace('users DELETE /');
     req.session.destroy((err) => log.error(err));
     res.sendStatus(204);
 });

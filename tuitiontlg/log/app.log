@@ -8202,3 +8202,228 @@
 [2021-03-15T17:12:54.248] [DEBUG] default - true
 [2021-03-15T17:12:54.289] [TRACE] default - ind GET /
 [2021-03-15T17:12:54.289] [TRACE] default - Get the application based off of the employee that submitted it.
+[2021-04-05T08:18:38.331] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: FORM_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-04-05T12:18:38.329Z",
+  "requestId": "OP71VBOIQS24FUCNPVV0HI1T5BVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 33.684075308556174
+}
+[2021-04-05T08:18:38.343] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: USER_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-04-05T12:18:38.342Z",
+  "requestId": "8H6C38DNQL78534RN29CHP2N5JVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 11.348644115397487
+}
+[2021-04-05T08:18:38.348] [ERROR] default - Unable to delete message table.  Error JSON:  {
+  "message": "Requested resource not found: Table: MSG_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-04-05T12:18:38.348Z",
+  "requestId": "GTVGF9K7IPQLRUA5F0GOOIFFOBVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 3.82806374594189
+}
+[2021-04-05T08:18:38.373] [ERROR] default - Unable to delete application table.  Error JSON:  {
+  "message": "Requested resource not found: Table: APP_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-04-05T12:18:38.373Z",
+  "requestId": "K48DJ5SU9K61TFC9ETS45VD1KNVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 11.244994775961093
+}
+[2021-04-05T08:18:45.007] [TRACE] default - Message Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'MSG_TABLE',
+    KeySchema: [ [Object], [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-04-05T12:18:40.890Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/MSG_TABLE',
+    TableId: '5ec935cd-92c4-4661-9cfe-a13a4ed9db11',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-04-05T08:18:45.033] [TRACE] default - Application Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object], [Object] ],
+    TableName: 'APP_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-04-05T12:18:40.924Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/APP_TABLE',
+    TableId: 'c4ee8b70-81b3-4411-afb6-9702f5ece097',
+    GlobalSecondaryIndexes: [ [Object] ]
+  }
+}
+[2021-04-05T08:18:45.059] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'FORM_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-04-05T12:18:40.958Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/FORM_TABLE',
+    TableId: '3627f83b-09d5-434e-8037-7e088c91fdbb'
+  }
+}
+[2021-04-05T08:18:45.074] [TRACE] default - User Table Created {
+  TableDescription: {
+    AttributeDefinitions: [ [Object] ],
+    TableName: 'USER_TABLE',
+    KeySchema: [ [Object] ],
+    TableStatus: 'CREATING',
+    CreationDateTime: 2021-04-05T12:18:40.981Z,
+    ProvisionedThroughput: {
+      NumberOfDecreasesToday: 0,
+      ReadCapacityUnits: 3,
+      WriteCapacityUnits: 3
+    },
+    TableSizeBytes: 0,
+    ItemCount: 0,
+    TableArn: 'arn:aws:dynamodb:us-east-1:420890431195:table/USER_TABLE',
+    TableId: '9961dc3f-b926-4180-9358-28b7aa568794'
+  }
+}
+[2021-04-05T08:18:55.131] [TRACE] default - Add User Function
+[2021-04-05T08:18:55.141] [TRACE] default - Add User Function
+[2021-04-05T08:18:55.148] [TRACE] default - Add User Function
+[2021-04-05T08:18:55.159] [TRACE] default - Add User Function
+[2021-04-05T08:18:55.165] [TRACE] default - Add User Function
+[2021-04-05T08:18:55.176] [TRACE] default - Add User Function
+[2021-04-05T08:18:57.375] [INFO] default - Successfully added reimbursement form
+[2021-04-05T08:18:57.448] [INFO] default - Successfully added reimbursement form
+[2021-04-05T08:18:57.453] [INFO] default - Successfully added reimbursement form
+[2021-04-05T08:18:57.513] [INFO] default - Successfully added user
+[2021-04-05T08:18:57.518] [INFO] default - Successfully added user
+[2021-04-05T08:18:57.599] [INFO] default - Successfully added user
+[2021-04-05T08:18:57.611] [INFO] default - Successfully added user
+[2021-04-05T08:18:57.616] [INFO] default - Successfully added user
+[2021-04-05T08:18:57.620] [INFO] default - Successfully added user
+[2021-04-05T08:19:06.790] [INFO] default - Successfully added application
+[2021-04-05T08:19:06.794] [INFO] default - Successfully added application
+[2021-04-05T08:19:06.796] [INFO] default - Successfully added application
+[2021-04-05T08:19:12.219] [INFO] default - Successfully added message
+[2021-04-05T08:19:12.223] [INFO] default - Successfully added message
+[2021-04-05T08:19:12.226] [INFO] default - Successfully added message
+[2021-04-05T08:19:12.229] [INFO] default - Successfully added message
+[2021-04-05T08:19:12.232] [INFO] default - Successfully added message
+[2021-04-05T08:21:01.279] [DEBUG] default - users POST /:  {
+  username: 'Tequesha',
+  password: 'Enter',
+  jobTitle: 'None',
+  processId: 0,
+  admin: false,
+  access: 'denied',
+  totalR: 1000,
+  availableR: 1000,
+  pendingR: 0,
+  awardedR: 0
+}
+[2021-04-05T08:21:01.292] [TRACE] default - Login Function
+[2021-04-05T08:21:01.294] [DEBUG] default - Username: Tequesha, Password: Enter
+[2021-04-05T08:21:01.297] [TRACE] default - Get User By Name Function
+[2021-04-05T08:21:03.745] [DEBUG] default - data.Item:  {"access":"granted","processId":2,"password":"Enter","username":"Tequesha","admin":true,"jobTitle":"Direct Supervisor"}
+[2021-04-05T08:21:03.747] [INFO] default - loggedUser:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-04-05T08:21:10.341] [TRACE] default - app GET /
+[2021-04-05T08:21:10.344] [TRACE] default - Get All Application Function
+[2021-04-05T08:21:10.375] [DEBUG] default - users GET /:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-04-05T08:21:10.383] [DEBUG] default - User:  {
+  access: 'granted',
+  processId: 2,
+  password: 'Enter',
+  username: 'Tequesha',
+  admin: true,
+  jobTitle: 'Direct Supervisor'
+}
+[2021-04-05T08:21:12.725] [DEBUG] default - [
+  {
+    processId: 2,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'pending',
+    employee: 'Jay',
+    appId: 32,
+    submitYear: 2021,
+    amountGranted: 0,
+    approval: {
+      departmentHead: 'pending',
+      benefitCoordinator: 'pending',
+      directSupervisor: 'pending'
+    }
+  },
+  {
+    processId: 6,
+    submitDate: 1,
+    submitMonth: 1,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 25,
+    submitYear: 2020,
+    amountGranted: 225,
+    approval: {
+      departmentHead: 'Kim',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Tequesha'
+    }
+  },
+  {
+    processId: 5,
+    submitDate: 30,
+    submitMonth: 5,
+    status: 'approved',
+    employee: 'Dezi',
+    appId: 20,
+    submitYear: 2020,
+    amountGranted: 150,
+    approval: {
+      departmentHead: 'Kaleb',
+      benefitCoordinator: 'Millard',
+      directSupervisor: 'Kaleb'
+    }
+  }
+]
+[2022-11-04T14:39:43.953] [TRACE] default - index GET /
+[2022-11-04T14:40:03.252] [DEBUG] default - users GET /:  undefined
+[2022-11-04T14:40:03.253] [DEBUG] default - User:  {}

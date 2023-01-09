@@ -301,3 +301,39 @@
   retryable: false,
   retryDelay: 38.87213244754209
 }
+[2021-04-05T08:18:38.331] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: FORM_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-04-05T12:18:38.329Z",
+  "requestId": "OP71VBOIQS24FUCNPVV0HI1T5BVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 33.684075308556174
+}
+[2021-04-05T08:18:38.343] [ERROR] default - Unable to delete user table.  Error JSON:  {
+  "message": "Requested resource not found: Table: USER_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-04-05T12:18:38.342Z",
+  "requestId": "8H6C38DNQL78534RN29CHP2N5JVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 11.348644115397487
+}
+[2021-04-05T08:18:38.348] [ERROR] default - Unable to delete message table.  Error JSON:  {
+  "message": "Requested resource not found: Table: MSG_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-04-05T12:18:38.348Z",
+  "requestId": "GTVGF9K7IPQLRUA5F0GOOIFFOBVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 3.82806374594189
+}
+[2021-04-05T08:18:38.373] [ERROR] default - Unable to delete application table.  Error JSON:  {
+  "message": "Requested resource not found: Table: APP_TABLE not found",
+  "code": "ResourceNotFoundException",
+  "time": "2021-04-05T12:18:38.373Z",
+  "requestId": "K48DJ5SU9K61TFC9ETS45VD1KNVV4KQNSO5AEMVJF66Q9ASUAAJG",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 11.244994775961093
+}

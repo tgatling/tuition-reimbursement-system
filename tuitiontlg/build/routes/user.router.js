@@ -38,26 +38,15 @@ var user = __importStar(require("../user/user"));
 var log_1 = __importDefault(require("../log"));
 var user_service_1 = __importDefault(require("../user/user.service"));
 var userRouter = express_1.default.Router();
-/* GET users listing. */
-userRouter.get("/login", function (req, res, next) {
-    log_1.default.debug('user GET /login: ', req.session.user);
-    if (req.session.user) {
-        console.log(req.session.user);
-        res.redirect("/");
-    }
-});
-userRouter.get("/", function (req, res, next) {
+// getLogin() - used to see if a user is already logged in
+userRouter.get('/', function (req, res, next) {
     log_1.default.debug('users GET /: ', req.session.user);
     var u = __assign({}, req.session.user);
     log_1.default.debug('User: ', u);
     res.send(JSON.stringify(u));
 });
-userRouter.delete("/", function (req, res, next) {
-    log_1.default.trace('users GET /');
-    req.session.destroy(function (err) { return log_1.default.error(err); });
-    res.sendStatus(204);
-});
-userRouter.post("/", function (req, res, next) {
+// login(user)
+userRouter.post('/', function (req, res, next) {
     log_1.default.debug('users POST /: ', req.body);
     user.login(req.body.username, req.body.password).then(function (user) {
         if (user === null) {
@@ -67,7 +56,15 @@ userRouter.post("/", function (req, res, next) {
         res.send(JSON.stringify(user));
     });
 });
+// logout()
+userRouter.delete('/', function (req, res, next) {
+    log_1.default.trace('users DELETE /');
+    req.session.destroy(function (err) { return log_1.default.error(err); });
+    res.sendStatus(204);
+});
+// updateUser(user)
 userRouter.put('/', function (req, res, next) {
+    log_1.default.trace('users PUT /');
     log_1.default.debug(req.body);
     user_service_1.default.updateUser(req.body).then(function (data) {
         res.send(data);

@@ -78,15 +78,15 @@ class UserService {
                 ':awardedR': user.awardedR,
             },
             ReturnValues: 'UPDATED_NEW'
-            };
-            return await this.doc.update(params).promise().then((data) => {
-                log.debug(data);
-                return true;
-            }).catch((err) => {
-                log.error(err);
-                return false;
-            });
-        }
+        };
+        return await this.doc.update(params).promise().then((data) => {
+            log.debug(data);
+            return true;
+        }).catch((err) => {
+            log.error(err);
+            return false;
+        });
+    }
 }
 
 const userService = new UserService();

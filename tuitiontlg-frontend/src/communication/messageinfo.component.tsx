@@ -15,21 +15,21 @@ function MessageInfoComponent(prop: msgProp) {
                 <thead>
                     <tr>
                         <th>Message Received: </th>
-                        <th>{prop.msgData.msgDate}</th>
+                        <th data-testid='msg-date'>{prop.msgData.msgDate}</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th>Recipient: </th>
-                        <td className='recipient' key = {'rec-'+prop.msgData.msgDate}>{prop.msgData.recipient}</td>
+                        <td className='msg-recipient' data-testid='msg-recipient' key = {'rec-'+prop.msgData.msgDate}>{prop.msgData.recipient}</td>
                     </tr>
                     <tr>
                         <th>Sender: </th>
-                        <td className='sender' key={'send-'+prop.msgData.msgDate}>{prop.msgData.sender}</td>   
+                        <td className='sender' data-testid='msg-sender' key={'send-'+prop.msgData.msgDate}>{prop.msgData.sender}</td>   
                     </tr>
                     <tr>
                         <th>Message: </th>
-                        <td className='recipient' key = {'body-'+prop.msgData.msgDate}>{prop.msgData.body}</td>
+                        <td className='recipient' data-testid='msg-body' key = {'body-'+prop.msgData.msgDate}>{prop.msgData.body}</td>
                     </tr>
                 </tbody>
             </table>
