@@ -31,14 +31,14 @@ Cloning the repository:
 https://github.com/tgatling/tuition-reimbursement-system.git
 
 Back-end Commands:
-* cd projectOne/tuition-reimbursement-system/tuitiontlg
+* cd tuition-reimbursement-system/tuitiontlg
 * npm install
 * aws configure <-- configure AWS CLI
 * npm run setup <-- create tables in DynamoDB
 * npm run start <-- run program
 
 Front-end Commands:
-* cd projectOne/tuition-reimbursement-system/tuitiontlg-frontend
+* cd tuition-reimbursement-system/tuitiontlg-frontend
 * npm install
 * npm run start
 
